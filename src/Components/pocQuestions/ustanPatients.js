@@ -21,7 +21,8 @@ const ustanPatientQuestions = {
             question: "How would you rate your computer literacy?",
             answer: '',
             type: 'checkbox',
-            values: ["Beginner", "Advanced"]
+            values: ["Beginner", "Advanced"],
+            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
         },
         q5: {
             question: "Do you currently have regular access to a computer?",
@@ -33,13 +34,15 @@ const ustanPatientQuestions = {
             question: "Overall, how difficult or easy did you find the password creation task in FlexPass?",
             answer: '',
             type: 'checkbox',
-            values: ["Very difficult", "Very easy"]
+            values: ["Very difficult", "Very easy"],
+            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
         },
         q7: {
             question: "Overall, how slow or fast did you find the password creation task in FlexPass?",
             answer: '',
             type: 'checkbox',
-            values: ["Slow", "Fast"]
+            values: ["Slow", "Fast"],
+            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
         },
         q8: {
             question: "How long (in seconds) did you need to create your password in FlexPass?",
@@ -50,7 +53,8 @@ const ustanPatientQuestions = {
             question: "Overall, how secure do you find the FlexPass password system?",
             answer: '',
             type: 'checkbox',
-            values: ["Very insecure", "Very secure"]
+            values: ["Very insecure", "Very secure"],
+            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
         },
         q10: {
             question: "How strong do you believe your FlexPass password is?",

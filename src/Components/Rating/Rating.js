@@ -36,17 +36,21 @@ export default class Rating extends Component {
         return options
     }
 
-    makeCheckBoxes = (value) => {
+    makeCheckBoxes = () => {
         let checkboxes = <ul>
             {this.props.values[0]}
-            <input key={1} id={1} type='checkbox' onChange={this.props.handleInput} />
-            <input key={2} id={1} type='checkbox' onChange={this.props.handleInput} />
-            <input key={3} id={1} type='checkbox' onChange={this.props.handleInput} />
-            <input key={4} id={1} type='checkbox' onChange={this.props.handleInput} />
-            <input key={5} id={1} type='checkbox' onChange={this.props.handleInput} />
+            <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
+            <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
+            <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
+            <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
+            <input type='radio' id={5} onChange={this.handleCheckBoxes} checked={this.props.answer === 5}/>
             {this.props.values[1]}
         </ul>
         return checkboxes;
+    }
+
+    handleCheckBoxes = (e) => {
+        this.props.handleCheckBox(parseInt(e.target.id))
     }
 
     selectRating() {
@@ -73,10 +77,6 @@ export default class Rating extends Component {
                     </textarea>
                 break;
             case 'checkbox':
-                // type = <input 
-                //         onChange={this.props.handleInput} 
-                //         value={this.props.answer}>
-                //     </input>
                 type = this.makeCheckBoxes(this.props.values)
                 break;
             default:

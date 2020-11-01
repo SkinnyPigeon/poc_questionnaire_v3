@@ -21,25 +21,29 @@ const fcrbQuestions = {
             question: "Com qualificaria els seus coneixements informàtics?",
             answer: '',
             type: 'checkbox',
-            values: ["Principiant", "Avançat"]
+            values: ["Principiant", "Avançat"],
+            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
         },
         q5: {
             question: "Té accés regular a un ordinador?",
             answer: '',
             type: 'select',
-            values: ["Sí", "No"]
+            values: ["Sí", "No"],
+            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
         },
         q6: {
             question: "Crec que m’agradaria fer servir el sistema FlexPass freqüentment",
             answer: '',
             type: 'checkbox',
-            values: ["Molt en desacord", "Molt d’acord"]
+            values: ["Molt en desacord", "Molt d’acord"],
+            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
         },
         q7: {
             question: "He trobat el sistema FlexPass innecessàriament complexe",
             answer: '',
             type: 'checkbox',
-            values: ["Molt en desacord", "Molt d’acord"]
+            values: ["Molt en desacord", "Molt d’acord"],
+            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
         },
         q8: {
             question: "He trobat el sistema FlexPass fàcil d’usar",

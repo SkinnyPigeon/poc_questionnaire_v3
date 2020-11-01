@@ -113,6 +113,14 @@ export default class QuestionComponent extends Component {
         })
     }
 
+    handleCheckBox = (id) => {
+        let updatedQuestions = this.state.questions;
+        updatedQuestions[this.state.question].answer = id;
+        this.setState({
+            questions: updatedQuestions
+        })
+    }
+
     render() {
         let display = '';
         let max = this.countQuestions();
@@ -124,7 +132,10 @@ export default class QuestionComponent extends Component {
                 rating={this.state.questions[this.state.question].type} 
                 answer={this.state.questions[this.state.question].answer}
                 values={this.state.questions[this.state.question].values}
+                selected={this.state.questions[this.state.question].selected}
                 handleInput={this.handleInput}
+                handleCheckboxes={this.handleCheckboxes}
+                handleCheckBox={this.handleCheckBox}
             />
             <Navigation 
                 handleNext={this.handleNext} 
