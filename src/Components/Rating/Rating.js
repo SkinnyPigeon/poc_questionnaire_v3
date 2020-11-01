@@ -40,19 +40,30 @@ export default class Rating extends Component {
         let type = '';
         switch(this.props.rating) {
             case 'input':
-                type = <input onChange={this.props.handleInput} value={this.props.answer}></input>
+                type = <input 
+                        onChange={this.props.handleInput} 
+                        value={this.props.answer}>
+                    </input>
                 break;
             case 'select':
                 let options = this.fillSelectOptions(this.props.values);
-                type = <select onChange={this.props.handleInput} value={this.props.answer}>
-                    {options}
-                </select>
+                type = <select 
+                    onChange={this.props.handleInput} 
+                    value={this.props.answer}>
+                        {options}
+                    </select>
                 break;
             case 'textarea':
-                type = <textarea onChange={this.props.handleInput}></textarea>
+                type = <textarea 
+                        onChange={this.props.handleInput} 
+                        value={this.props.answer}>
+                    </textarea>
                 break;
             case 'checkbox':
-                type = <input onChange={this.props.handleInput}></input>
+                type = <input 
+                        onChange={this.props.handleInput} 
+                        value={this.props.answer}>
+                    </input>
                 break;
             default:
                 break;
