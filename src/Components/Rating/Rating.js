@@ -39,11 +39,26 @@ export default class Rating extends Component {
     makeCheckBoxes = () => {
         let checkboxes = <ul>
             {this.props.values[0]}
-            <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
-            <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
-            <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
-            <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
-            <input type='radio' id={5} onChange={this.handleCheckBoxes} checked={this.props.answer === 5}/>
+            <label>
+                <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
+                1
+            </label>
+            <label>
+                <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
+                2
+            </label>
+            <label>
+                <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
+                3
+            </label>
+            <label>
+                <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
+                4
+            </label>
+            <label>
+                <input type='radio' id={5} onChange={this.handleCheckBoxes} checked={this.props.answer === 5}/>
+                5
+            </label>
             {this.props.values[1]}
         </ul>
         return checkboxes;

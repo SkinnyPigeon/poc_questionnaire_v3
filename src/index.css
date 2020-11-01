@@ -16,9 +16,18 @@ ul {
   padding-left: 0;
   margin-bottom: 0;
 }
-
+/* 
 ul input {
   margin: 5px;
   margin-bottom: 0;
   margin-top: 0;
+} */
+
+ul input[type=radio] {
+  display: block;
+  margin: 0 5px;
+}
+
+label {
+  display: inline-block;
 }
