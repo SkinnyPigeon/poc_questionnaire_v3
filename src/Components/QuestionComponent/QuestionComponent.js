@@ -15,13 +15,11 @@ export default class QuestionComponent extends Component {
         questions: '',
         sections: '',
         question: 'q1',
-        type: '',
     }
 
     componentDidMount() {
         let questions = '';
         let sections = '';
-        let type = '';
         switch(this.props.hospital) {
             case 'FCRB':
                 questions = fcrbQuestions['questions'];
@@ -32,7 +30,6 @@ export default class QuestionComponent extends Component {
                     case 'PATIENT':
                         questions = ustanPatientQuestions['questions'];
                         sections = ustanPatientQuestions['sections'];
-                        // type = this.setupType(questions['q1']);
                         break;
                     case 'PROFESSIONAL':
                         questions = ustanProfessionalQuestions['questions'];
@@ -62,19 +59,11 @@ export default class QuestionComponent extends Component {
         this.setState({
             questions: questions,
             sections: sections,
-            type: type
         })
     }
 
-    // componentDidUpdate(prevProp, prevState) {
-        // console.log(this.state)
-        // if(this.state.questions[this.state.question].answer !== prevState.questions[this.state.question].answer) {
-        //     console.log("KASJKDJSJ")
-        // }
-    // }
-
     componentDidUpdate() {
-        console.log(this.state.question)
+        console.log(this.state.questions)
     }
     countQuestions = () => {
         let count = 0, key;
@@ -91,10 +80,8 @@ export default class QuestionComponent extends Component {
         let questionNumber = this.state.question.substring(1);
         if(questionNumber < questionCount) {
             let question = 'q' + (parseInt(questionNumber) + 1);
-            // let type = this.selectType(this.state.questions, question);
             this.setState({
                 question: question,
-                // type: type
             })
         }
     }
@@ -103,64 +90,12 @@ export default class QuestionComponent extends Component {
         let questionNumber = this.state.question.substring(1);
         if(questionNumber > 1) {
             let question = 'q' + (parseInt(questionNumber) - 1);
-            // let type = this.selectType(this.state.questions, question);
             this.setState({
                 question: question,
-                // type: type
             })
         }
     }
-
     
-    setupType = (question) => {
-        // console.log(question);
-        let type = '';
-        switch(question.type) {
-            case 'input':
-                type = <input onChange={this.handleInput} value=''></input>
-                break;
-            case 'select':
-                let options = this.fillSelectOptions(question);
-                type = <select onChange={this.handleInput} value={0}>
-                    {options}
-                </select>
-                break;
-            case 'textarea':
-                type = <textarea onChange={this.handleInput}></textarea>
-                break;
-            case 'checkbox':
-                type = <input onChange={this.handleInput}></input>
-                break;
-            default:
-                break;
-        }
-        return type;
-    }
-
-    selectType = () => {
-        let type = '';
-        switch(this.state.questions[this.state.question].type) {
-            case 'input':
-                type = <input onChange={this.handleInput} value={this.state.questions[this.state.question].answer}></input>
-                break;
-            case 'select':
-                let options = this.fillSelectOptions(this.state.questions[this.state.question]);
-                type = <select onChange={this.handleInput} value={this.state.questions[this.state.question].answer}>
-                    {options}
-                </select>
-                break;
-            case 'textarea':
-                type = <textarea onChange={this.handleInput}></textarea>
-                break;
-            case 'checkbox':
-                type = <input onChange={this.handleInput}></input>
-                break;
-            default:
-                break;
-        }
-        return type;
-    }
-
     fillSelectOptions = (question) => {
         console.log(question)
         let options = [];
@@ -184,7 +119,6 @@ export default class QuestionComponent extends Component {
         let questionNumber = this.state.question.substring(1);
         this.state.questions ? display = <div className={styles.wrapper}>
             <h3 className={styles.question}>{this.state.questions[this.state.question].question}</h3>
-            {/* {this.state.type} */}
             <Rating 
                 question={this.state.question} 
                 rating={this.state.questions[this.state.question].type} 
