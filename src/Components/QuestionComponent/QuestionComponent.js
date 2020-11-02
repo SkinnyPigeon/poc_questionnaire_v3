@@ -152,7 +152,7 @@ export default class QuestionComponent extends Component {
                 handlePrevious={this.handlePrevious} 
             />
             <ProgressTracker max={String(max)} value={questionNumber}/>
-            <Submit questions={this.state.questions} />
+            <Submit questions={this.state.questions} caseStudy={this.props.caseStudy} />
         </div> : display = '';                                                         
         return (
             <div>

@@ -6,3 +6,23 @@
     min-width: 75%;
     height: 100%;
 }
+
+.checkBoxList {
+    /* display: inline-block; */
+    position: relative;
+}
+
+.checkBoxList div {
+    display: inline-block;
+}
+
+.checkBoxes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.maxMin {
+    display: inline-block;
+}

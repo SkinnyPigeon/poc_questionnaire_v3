@@ -38,29 +38,35 @@ export default class Rating extends Component {
     }
 
     makeCheckBoxes = () => {
-        let checkboxes = <ul>
-            {this.props.values[0]}
-            <label>
-                <input type='radio' id={0} onChange={this.handleCheckBoxes} checked={this.props.answer === 0}/>
-                1
-            </label>
-            <label>
-                <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
-                2
-            </label>
-            <label>
-                <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
-                3
-            </label>
-            <label>
-                <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
-                4
-            </label>
-            <label>
-                <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
-                5
-            </label>
-            {this.props.values[1]}
+        let checkboxes = <ul className={styles.checkBoxList}>
+            <div className={styles.maxMin}>
+                {this.props.values[0]}
+            </div>
+            <div className={styles.checkboxes}>
+                <label>
+                    <input type='radio' id={0} onChange={this.handleCheckBoxes} checked={this.props.answer === 0}/>
+                    1
+                </label>
+                <label>
+                    <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
+                    2
+                </label>
+                <label>
+                    <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
+                    3
+                </label>
+                <label>
+                    <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
+                    4
+                </label>
+                <label>
+                    <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
+                    5
+                </label>
+            </div>
+            <div className={styles.maxMin}>
+                {this.props.values[1]}
+            </div>
         </ul>
         return checkboxes;
     }
