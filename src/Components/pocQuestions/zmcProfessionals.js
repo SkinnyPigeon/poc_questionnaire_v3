@@ -2,19 +2,19 @@ const zmcProfessionalQuestions = {
     questions: {
         q1: {
             question: "Wat is uw leeftijdsbereik (in jaren)?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 en hoger"]
         },
         q2: {
             question: "Wat is uw hoogste opleidingsniveau?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ph.D. opleiding", "Master opleiding", "Bachelor opleiding", "Middelbare opleiding", "Basis school"]
         },
         q3: {
             question: "Wat is uw beroep?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Dokter", "Verpleegkundige", "Verzorger", "IT-expert", "Beveiligingsexpert", "Overige"]
         },
@@ -26,7 +26,7 @@ const zmcProfessionalQuestions = {
         },
         q5: {
             question: "Heeft u op dit moment regelmatig toegang tot een computer?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ja", "Nee"]
         },
@@ -60,7 +60,7 @@ const zmcProfessionalQuestions = {
         },
         q11: {
             question: "Bent u bereid om het FlexPass wachtwoordsysteem te gebruiken als alternatief gebruikersauthenticatiesysteem om in te loggen op uw gebruikersaccount?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ja", "Nee"]
         },

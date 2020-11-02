@@ -2,19 +2,19 @@ const ustanProfessionalQuestions = {
     questions: {
         q1: {
             question: "What is your Age range (in years)?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 and above"]
         },
         q2: {
             question: "What is your highest degree of education?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ph.D. Studies", "Master Studies", "Bachelor Studies", "High School", "Primary School"]
         },
         q3: {
             question: "What is your occupation?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Doctor", "Nurse", "Caregiver", "IT Expert", "Security Expert", "Other"]
         },
@@ -26,7 +26,7 @@ const ustanProfessionalQuestions = {
         },
         q5: {
             question: "Do you currently have regular access to a computer?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Yes", "No"]
         },
@@ -60,7 +60,7 @@ const ustanProfessionalQuestions = {
         },
         q11: {
             question: "Would you be willing to use the FlexPass password system as an alternative user authentication system to login to your user account?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Yes", "No"]
         },

@@ -7,13 +7,13 @@ const zmcPatientQuestions = {
         },
         q2: {
             question: "Wat is uw leeftijdscategorie (in jaren)?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 en hoger"]
         },
         q3: {
             question: "Wat is je hoogste opleidingsniveau?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ph.D. opleiding", "Master opleiding", "Bachelor opleiding", "Middelbare opleiding", "Basis school"]
         },
@@ -25,7 +25,7 @@ const zmcPatientQuestions = {
         },
         q5: {
             question: "Té accés regular a un ordinador?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ja", "Nee"]
         },
@@ -169,19 +169,19 @@ const zmcPatientQuestions = {
         },
         q30: {
             question: "Heeft u met succes de twee-factor authenticatie mobiele applicatie geïnstalleerd en ingeschreven?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ja", "Nee"]
         },
         q31: {
             question: "Als uw antwoord 'Ja' was, welke twee-factor authenticatiemethode heeft u dan gebruikt om in te loggen?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Push-bericht", "Geheime code (Time-based One-Time Password - TOTP)"]
         },
         q32: {
             question: "Heeft u met succes toegang gekregen tot het systeem na gebruik te hebben gemaakt van de tweefactor authenticatiemethode?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ja", "Nee"]
         },

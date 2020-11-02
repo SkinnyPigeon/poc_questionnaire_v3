@@ -7,13 +7,13 @@ const fcrbQuestions = {
         },
         q2: {
             question: "En quin rang d’edat es troba vostè (en anys)?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 o més"]
         },
         q3: {
             question: "Quin és el grau més alt de la seva educació oficial?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Doctorat", "Estudis de Màster", "Estudis de Grau / Diplomatura", "Estudis de Batxillerat", "Estudis Secundaris"]
         },
@@ -26,7 +26,7 @@ const fcrbQuestions = {
         },
         q5: {
             question: "Té accés regular a un ordinador?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Sí", "No"],
             selected: {1: false, 2: false, 3: true, 4: false, 5: false}
@@ -173,19 +173,19 @@ const fcrbQuestions = {
         },
         q30: {
             question: "Ha pogut instal·lar i inscriure’t a l’aplicació d’autenticació de dos factors amb èxit?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Sí", "No"]
         },
         q31: {
             question: "Si la seva resposta ha sigut «Sí», quin mètode d’autenticació de dos factors ha fet servir per a accedir?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Missatge de notificació push", "Codi secret (Contrasenya temporal d’un sol us - TOTP)"]
         },
         q32: {
             question: "Ha pogut accedir de manera exitosa al sistema després de fer servir l’autenticació de dos factors?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Sí", "No"]
         },

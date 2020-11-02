@@ -7,13 +7,13 @@ const ustanPatientQuestions = {
         },
         q2: {
             question: "What is your Age range (in years)?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 and above"]
         },
         q3: {
             question: "What is your highest degree of education?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Ph.D. Studies", "Master Studies", "Bachelor Studies", "High School", "Primary School"]
         },
@@ -25,7 +25,7 @@ const ustanPatientQuestions = {
         },
         q5: {
             question: "Do you currently have regular access to a computer?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Yes", "No"]
         },
@@ -169,19 +169,19 @@ const ustanPatientQuestions = {
         },
         q30: {
             question: "Did you successfully install and enroll to the two-factor authentication mobile application?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Yes", "No"]
         },
         q31: {
             question: "If your answer was 'Yes', which two-factor authentication method did you use to login?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Push notification message", "Secret code (Time-based One-Time Password - TOTP)"]
         },
         q32: {
             question: "Did you successfully access the system after using the two-factor authentication method?",
-            answer: '',
+            answer: 0,
             type: 'select',
             values: ["Yes", "No"]
         },
