@@ -4,4 +4,7 @@
 
 .question {
     min-height: 10em;
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto;
 }

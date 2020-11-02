@@ -2,7 +2,7 @@ import QuestionComponent from './Components/QuestionComponent/QuestionComponent'
 function App() {
   return (
     <div className="App">
-      <QuestionComponent hospital='USTAN' type='PATIENT'/>
+      <QuestionComponent hospital='FCRB' type='PATIENT'/>
     </div>
   );
 }

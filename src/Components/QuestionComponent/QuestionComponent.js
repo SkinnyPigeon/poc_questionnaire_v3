@@ -7,6 +7,7 @@ import zmcProfessionalQuestions from '../pocQuestions/zmcProfessionals';
 import Navigation from '../Navigation/Navigation';
 import ProgressTracker from '../progressTracker/ProgressTracker';
 import Rating from '../Rating/Rating';
+import Submit from '../submit/Submit';
 
 import styles from './QuestionComponent.module.css';
 
@@ -107,7 +108,12 @@ export default class QuestionComponent extends Component {
 
     handleInput = (e) => {
         let updatedQuestions = this.state.questions;
-        updatedQuestions[this.state.question].answer = e.target.value;
+        if(this.isInteger(e.target.value)) {
+            updatedQuestions[this.state.question].answer = parseInt(e.target.value);
+
+        } else {
+            updatedQuestions[this.state.question].answer = e.target.value;
+        }
         this.setState({
             questions: updatedQuestions
         })
@@ -119,6 +125,10 @@ export default class QuestionComponent extends Component {
         this.setState({
             questions: updatedQuestions
         })
+    }
+
+    isInteger = (value) => {
+        return /^\d+$/.test(value);
     }
 
     render() {
@@ -142,6 +152,7 @@ export default class QuestionComponent extends Component {
                 handlePrevious={this.handlePrevious} 
             />
             <ProgressTracker max={String(max)} value={questionNumber}/>
+            <Submit questions={this.state.questions} />
         </div> : display = '';                                                         
         return (
             <div>

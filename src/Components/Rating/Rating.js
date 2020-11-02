@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './Rating.module.css';
 
 export default class Rating extends Component {
 
@@ -40,23 +41,23 @@ export default class Rating extends Component {
         let checkboxes = <ul>
             {this.props.values[0]}
             <label>
-                <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
+                <input type='radio' id={0} onChange={this.handleCheckBoxes} checked={this.props.answer === 0}/>
                 1
             </label>
             <label>
-                <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
+                <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
                 2
             </label>
             <label>
-                <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
+                <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
                 3
             </label>
             <label>
-                <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
+                <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
                 4
             </label>
             <label>
-                <input type='radio' id={5} onChange={this.handleCheckBoxes} checked={this.props.answer === 5}/>
+                <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
                 5
             </label>
             {this.props.values[1]}
@@ -86,7 +87,7 @@ export default class Rating extends Component {
                     </select>
                 break;
             case 'textarea':
-                type = <textarea 
+                type = <textarea className={styles.textArea}
                         onChange={this.props.handleInput} 
                         value={this.props.answer}>
                     </textarea>
@@ -102,7 +103,7 @@ export default class Rating extends Component {
 
     render() {
         return (
-            <div>
+            <div className={styles.rating}>
                 {this.state.rating}
             </div>
         )
