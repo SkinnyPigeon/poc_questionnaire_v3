@@ -4,6 +4,7 @@ import styles from './Submit.module.css';
 export default class Submit extends Component {
 
     handleKeyDown = (e) => {
+        console.log(e)
         if (e.key === 'Enter') {
             this.handleSubmission()
         }
@@ -47,7 +48,7 @@ export default class Submit extends Component {
     render() {
         return (
             <div className={styles.wrapper}>
-                <button id="submitButton" onClick={this.handleSubmission} onKeyDown={this.handleKeyDown}>Submit</button>
+                <button id="submitButton" onClick={this.handleSubmission} onKeyDown={this.handleKeyDown} on>Submit</button>
             </div>
         )
     }
