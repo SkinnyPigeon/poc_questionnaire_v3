@@ -4,19 +4,19 @@ const ustanProfessionalQuestions = {
             question: "What is your Age range (in years)?",
             answer: 0,
             type: 'select',
-            values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 and above"]
+            values: ["Please select", "18-25", "26-35", "36-45", "46-55", "56-65", "66 and above"]
         },
         q2: {
             question: "What is your highest degree of education?",
             answer: 0,
             type: 'select',
-            values: ["Ph.D. Studies", "Master Studies", "Bachelor Studies", "High School", "Primary School"]
+            values: ["Please select", "Ph.D. Studies", "Master Studies", "Bachelor Studies", "High School", "Primary School"]
         },
         q3: {
             question: "What is your occupation?",
             answer: 0,
             type: 'select',
-            values: ["Doctor", "Nurse", "Caregiver", "IT Expert", "Security Expert", "Other"]
+            values: ["Please select", "Doctor", "Nurse", "Caregiver", "IT Expert", "Security Expert", "Other"]
         },
         q4: {
             question: "How would you rate your computer literacy?",
@@ -28,7 +28,7 @@ const ustanProfessionalQuestions = {
             question: "Do you currently have regular access to a computer?",
             answer: 0,
             type: 'select',
-            values: ["Yes", "No"]
+            values: ["Please select", "Yes", "No"]
         },
         q6: {
             question: "Do you like the idea of creating picture passwords with personalized images tailored to the users' prior daily life activities and experiences?",
@@ -62,7 +62,7 @@ const ustanProfessionalQuestions = {
             question: "Would you be willing to use the FlexPass password system as an alternative user authentication system to login to your user account?",
             answer: 0,
             type: 'select',
-            values: ["Yes", "No"]
+            values: ["Please select", "Yes", "No"]
         },
         q12: {
             question: "Explain the reasoning behind your answer in the previous question",

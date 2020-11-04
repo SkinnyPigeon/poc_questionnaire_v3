@@ -15,13 +15,13 @@ export default class Rating extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        if(prevProps.question !== this.props.question) {
+        if (prevProps.question !== this.props.question) {
             let rating = this.selectRating();
             this.setState({
                 rating: rating
             })
         }
-        if(prevProps.answer !== this.props.answer) {
+        if (prevProps.answer !== this.props.answer) {
             let rating = this.selectRating();
             this.setState({
                 rating: rating
@@ -31,7 +31,7 @@ export default class Rating extends Component {
 
     fillSelectOptions = (values) => {
         let options = [];
-        for(let i = 0; i < values.length; i++) {
+        for (let i = 0; i < values.length; i++) {
             options.push(<option key={i} value={i}>{values[i]}</option>)
         }
         return options
@@ -44,23 +44,23 @@ export default class Rating extends Component {
             </div>
             <div className={styles.checkboxes}>
                 <label>
-                    <input type='radio' id={0} onChange={this.handleCheckBoxes} checked={this.props.answer === 0}/>
+                    <input type='radio' id={0} onChange={this.handleCheckBoxes} checked={this.props.answer === 0} />
                     <b>1</b>
                 </label>
                 <label>
-                    <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
+                    <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1} />
                     <b>2</b>
                 </label>
                 <label>
-                    <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
+                    <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2} />
                     <b>3</b>
                 </label>
                 <label>
-                    <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
+                    <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3} />
                     <b>4</b>
                 </label>
                 <label>
-                    <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
+                    <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4} />
                     <b>5</b>
                 </label>
             </div>
@@ -77,26 +77,33 @@ export default class Rating extends Component {
 
     selectRating() {
         let type = '';
-        switch(this.props.rating) {
+        switch (this.props.rating) {
             case 'input':
-                type = <input 
-                        onChange={this.props.handleInput} 
-                        value={this.props.answer}>
-                    </input>
+                type = <div>
+                    <input type="number"
+                        onChange={this.props.handleInput}
+                        value={this.props.answer} 
+                        max={999}
+                    />
+                    <div className={styles.inputValue}>
+                        {this.props.values[0]}
+                    </div>
+                </div>
+
                 break;
             case 'select':
                 let options = this.fillSelectOptions(this.props.values);
-                type = <select 
-                    onChange={this.props.handleInput} 
+                type = <select
+                    onChange={this.props.handleInput}
                     value={this.props.answer}>
-                        {options}
-                    </select>
+                    {options}
+                </select>
                 break;
             case 'textarea':
                 type = <textarea className={styles.textArea}
-                        onChange={this.props.handleInput} 
-                        value={this.props.answer}>
-                    </textarea>
+                    onChange={this.props.handleInput}
+                    value={this.props.answer}>
+                </textarea>
                 break;
             case 'checkbox':
                 type = this.makeCheckBoxes(this.props.values)

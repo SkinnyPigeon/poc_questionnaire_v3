@@ -3,19 +3,20 @@ const ustanPatientQuestions = {
         q1: {
             question: "Please enter your User ID that was provided by the researcher" ,
             answer: '',
-            type: 'input'
+            type: 'input',
+            values: [""]
         },
         q2: {
             question: "What is your Age range (in years)?",
             answer: 0,
             type: 'select',
-            values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 and above"]
+            values: ["Please select", "18-25", "26-35", "36-45", "46-55", "56-65", "66 and above"]
         },
         q3: {
             question: "What is your highest degree of education?",
             answer: 0,
             type: 'select',
-            values: ["Ph.D. Studies", "Master Studies", "Bachelor Studies", "High School", "Primary School"]
+            values: ["Please select", "Ph.D. Studies", "Master Studies", "Bachelor Studies", "High School", "Primary School"]
         },
         q4: {
             question: "How would you rate your computer literacy?",
@@ -27,7 +28,7 @@ const ustanPatientQuestions = {
             question: "Do you currently have regular access to a computer?",
             answer: 0,
             type: 'select',
-            values: ["Yes", "No"]
+            values: ["Please select", "Yes", "No"]
         },
         q6: {
             question: "I think that I would like to use the FlexPass system frequently",
@@ -104,7 +105,8 @@ const ustanPatientQuestions = {
         q18: {
             question: "How long (in seconds) did you need to create your password in FlexPass?",
             answer: '',
-            type: 'input'
+            type: 'input',
+            values: ["Seconds"]
         },
         q19: {
             question: "Overall, how secure do you find the FlexPass password system?",
@@ -171,19 +173,19 @@ const ustanPatientQuestions = {
             question: "Did you successfully install and enroll to the two-factor authentication mobile application?",
             answer: 0,
             type: 'select',
-            values: ["Yes", "No"]
+            values: ["Please select", "Yes", "No"]
         },
         q31: {
             question: "If your answer was 'Yes', which two-factor authentication method did you use to login?",
             answer: 0,
             type: 'select',
-            values: ["Push notification message", "Secret code (Time-based One-Time Password - TOTP)"]
+            values: ["Please select", "Push notification message", "Secret code (Time-based One-Time Password - TOTP)"]
         },
         q32: {
             question: "Did you successfully access the system after using the two-factor authentication method?",
             answer: 0,
             type: 'select',
-            values: ["Yes", "No"]
+            values: ["Please select", "Yes", "No"]
         },
         q33: {
             question: "Overall, how difficult or easy did you find the installation and enrollment to the two-factor authentication mobile application?",

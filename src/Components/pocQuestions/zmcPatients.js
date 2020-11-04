@@ -3,7 +3,8 @@ const zmcPatientQuestions = {
         q1: {
             question: "Voer uw gebruikers-ID in die door de onderzoeker is verstrekt" ,
             answer: '',
-            type: 'input'
+            type: 'input',
+            values: [""]
         },
         q2: {
             question: "Wat is uw leeftijdscategorie (in jaren)?",
@@ -104,7 +105,8 @@ const zmcPatientQuestions = {
         q18: {
             question: "Hoe lang (in seconden) moest u uw wachtwoord in FlexPass aanmaken?",
             answer: '',
-            type: 'input'
+            type: 'input',
+            values: ["Seconden"]
         },
         q19: {
             question: "Hoe veilig vindt u het FlexPass-wachtwoordsysteem?",
@@ -171,19 +173,19 @@ const zmcPatientQuestions = {
             question: "Heeft u met succes de twee-factor authenticatie mobiele applicatie geïnstalleerd en ingeschreven?",
             answer: 0,
             type: 'select',
-            values: ["Ja", "Nee"]
+            values: ["Maak hier uw keuze", "Ja", "Nee"]
         },
         q31: {
             question: "Als uw antwoord 'Ja' was, welke twee-factor authenticatiemethode heeft u dan gebruikt om in te loggen?",
             answer: 0,
             type: 'select',
-            values: ["Push-bericht", "Geheime code (Time-based One-Time Password - TOTP)"]
+            values: ["Maak hier uw keuze", "Push-bericht", "Geheime code (Time-based One-Time Password - TOTP)"]
         },
         q32: {
             question: "Heeft u met succes toegang gekregen tot het systeem na gebruik te hebben gemaakt van de tweefactor authenticatiemethode?",
             answer: 0,
             type: 'select',
-            values: ["Ja", "Nee"]
+            values: ["Maak hier uw keuze", "Ja", "Nee"]
         },
         q33: {
             question: "Hoe moeilijk of eenvoudig vond u de installatie en inschrijving voor de twee-factor authenticatie mobiele applicatie?",

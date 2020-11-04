@@ -3,33 +3,32 @@ const fcrbQuestions = {
         q1: {
             question: "Introdueixi el codi d'usuari proveït per l’investigador" ,
             answer: '',
-            type: 'input'
+            type: 'input',
+            values: [""]
         },
         q2: {
             question: "En quin rang d’edat es troba vostè (en anys)?",
             answer: 0,
             type: 'select',
-            values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 o més"]
+            values: ["Si us plau seleccioneu", "18-25", "26-35", "36-45", "46-55", "56-65", "66 o més"]
         },
         q3: {
             question: "Quin és el grau més alt de la seva educació oficial?",
             answer: 0,
             type: 'select',
-            values: ["Doctorat", "Estudis de Màster", "Estudis de Grau / Diplomatura", "Estudis de Batxillerat", "Estudis Secundaris"]
+            values: ["Si us plau seleccioneu", "Doctorat", "Estudis de Màster", "Estudis de Grau / Diplomatura", "Estudis de Batxillerat", "Estudis Secundaris"]
         },
         q4: {
             question: "Com qualificaria els seus coneixements informàtics?",
             answer: '',
             type: 'checkbox',
-            values: ["Principiant", "Avançat"],
-            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
+            values: ["Principiant", "Avançat"]
         },
         q5: {
             question: "Té accés regular a un ordinador?",
             answer: 0,
             type: 'select',
-            values: ["Sí", "No"],
-            selected: {1: false, 2: false, 3: true, 4: false, 5: false}
+            values: ["Si us plau seleccioneu", "Sí", "No"]
         },
         q6: {
             question: "Crec que m’agradaria fer servir el sistema FlexPass freqüentment",
@@ -108,7 +107,8 @@ const fcrbQuestions = {
         q18: {
             question: "Quant li ha costat (en segons) crear la seva contrasenya a FlexPass?",
             answer: '',
-            type: 'input'
+            type: 'input',
+            values: ["Segons"]
         },
         q19: {
             question: "En general com troba de segur el sistema de contrasenya FlexPass?",
@@ -175,19 +175,19 @@ const fcrbQuestions = {
             question: "Ha pogut instal·lar i inscriure’t a l’aplicació d’autenticació de dos factors amb èxit?",
             answer: 0,
             type: 'select',
-            values: ["Sí", "No"]
+            values: ["Si us plau seleccioneu", "Sí", "No"]
         },
         q31: {
             question: "Si la seva resposta ha sigut «Sí», quin mètode d’autenticació de dos factors ha fet servir per a accedir?",
             answer: 0,
             type: 'select',
-            values: ["Missatge de notificació push", "Codi secret (Contrasenya temporal d’un sol us - TOTP)"]
+            values: ["Si us plau seleccioneu", "Missatge de notificació push", "Codi secret (Contrasenya temporal d’un sol us - TOTP)"]
         },
         q32: {
             question: "Ha pogut accedir de manera exitosa al sistema després de fer servir l’autenticació de dos factors?",
             answer: 0,
             type: 'select',
-            values: ["Sí", "No"]
+            values: ["Si us plau seleccioneu", "Sí", "No"]
         },
         q33: {
             question: "En general com de difícil o fàcil ha sigut la instal·lació i inscripció a la aplicació mòbil d’autenticació de dos factors?",

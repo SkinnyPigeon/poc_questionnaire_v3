@@ -51,3 +51,15 @@ label {
     left: 65%;
     transform: translate(-35%, -50%);
 }
+
+
+.inputValue {
+    padding-left: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    text-align: right;
+    max-width: 10%;
+}

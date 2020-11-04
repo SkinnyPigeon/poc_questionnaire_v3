@@ -4,19 +4,19 @@ const zmcProfessionalQuestions = {
             question: "Wat is uw leeftijdsbereik (in jaren)?",
             answer: 0,
             type: 'select',
-            values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 en hoger"]
+            values: ["Maak hier uw keuze", "18-25", "26-35", "36-45", "46-55", "56-65", "66 en hoger"]
         },
         q2: {
             question: "Wat is uw hoogste opleidingsniveau?",
             answer: 0,
             type: 'select',
-            values: ["Ph.D. opleiding", "Master opleiding", "Bachelor opleiding", "Middelbare opleiding", "Basis school"]
+            values: ["Maak hier uw keuze", "Ph.D. opleiding", "Master opleiding", "Bachelor opleiding", "Middelbare opleiding", "Basis school"]
         },
         q3: {
             question: "Wat is uw beroep?",
             answer: 0,
             type: 'select',
-            values: ["Dokter", "Verpleegkundige", "Verzorger", "IT-expert", "Beveiligingsexpert", "Overige"]
+            values: ["Maak hier uw keuze", "Dokter", "Verpleegkundige", "Verzorger", "IT-expert", "Beveiligingsexpert", "Overige"]
         },
         q4: {
             question: "Hoe zou u uw computervaardigheden beoordelen?",
@@ -28,7 +28,7 @@ const zmcProfessionalQuestions = {
             question: "Heeft u op dit moment regelmatig toegang tot een computer?",
             answer: 0,
             type: 'select',
-            values: ["Ja", "Nee"]
+            values: ["Maak hier uw keuze", "Ja", "Nee"]
         },
         q6: {
             question: "Vindt u het een goed idee om beeldwachtwoorden te creëren met gepersonaliseerde beelden die zijn afgestemd op de eerdere activiteiten en ervaringen van de gebruikers in het dagelijks leven?",
@@ -62,7 +62,7 @@ const zmcProfessionalQuestions = {
             question: "Bent u bereid om het FlexPass wachtwoordsysteem te gebruiken als alternatief gebruikersauthenticatiesysteem om in te loggen op uw gebruikersaccount?",
             answer: 0,
             type: 'select',
-            values: ["Ja", "Nee"]
+            values: ["Maak hier uw keuze", "Ja", "Nee"]
         },
         q12: {
             question: "Leg de redenering achter uw antwoord in de vorige vraag uit",
