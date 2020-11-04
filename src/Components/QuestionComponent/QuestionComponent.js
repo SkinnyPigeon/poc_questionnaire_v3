@@ -8,6 +8,7 @@ import Navigation from '../Navigation/Navigation';
 import ProgressTracker from '../progressTracker/ProgressTracker';
 import Rating from '../Rating/Rating';
 import Submit from '../submit/Submit';
+import FlashMessage from '../FlashMessage/FlashMessage';
 
 import styles from './QuestionComponent.module.css';
 
@@ -22,6 +23,7 @@ export default class QuestionComponent extends Component {
     componentDidMount() {
         let questions = '';
         let sections = '';
+        let message = '';
         switch(this.props.hospital) {
             case 'FCRB':
                 questions = fcrbQuestions['questions'];
@@ -32,6 +34,7 @@ export default class QuestionComponent extends Component {
                     case 'PATIENT':
                         questions = ustanPatientQuestions['questions'];
                         sections = ustanPatientQuestions['sections'];
+                        message = ustanPatientQuestions['message'];
                         break;
                     case 'PROFESSIONAL':
                         questions = ustanProfessionalQuestions['questions'];
@@ -61,6 +64,7 @@ export default class QuestionComponent extends Component {
         this.setState({
             questions: questions,
             sections: sections,
+            message: message
         })
     }
 
@@ -80,7 +84,8 @@ export default class QuestionComponent extends Component {
     handleNext = () => {
         if(this.state.skip) {
             this.setState({
-                question: 'q37'
+                question: 'q37',
+                showMessage: true
             })
             return;
         }
@@ -90,7 +95,8 @@ export default class QuestionComponent extends Component {
             let question = 'q' + (parseInt(questionNumber) + 1);
             this.setState({
                 question: question,
-                skip: false
+                skip: false,
+                showMessage: false
             })
         }
     }
@@ -101,6 +107,7 @@ export default class QuestionComponent extends Component {
             let question = 'q' + (parseInt(questionNumber) - 1);
             this.setState({
                 question: question,
+                showMessage: false
             })
         }
     }
@@ -211,6 +218,7 @@ export default class QuestionComponent extends Component {
                 disabled={disabledSubmit}
                 display={disabledSubmit}
             />
+            <FlashMessage message={this.state.message} display={this.state.showMessage} />
         </div> : display = '';                                                         
         return (
             <div>
