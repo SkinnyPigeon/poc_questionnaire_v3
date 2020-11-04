@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import styles from './FlashMessage.module.css';
 
 export default class FlashMessage extends Component {
 
     display = () => {
         let display = '';
         if(this.props.display) {
-            display = <div>
+            display = <div className={styles.show}>
                 {this.props.message}
             </div>
         }
