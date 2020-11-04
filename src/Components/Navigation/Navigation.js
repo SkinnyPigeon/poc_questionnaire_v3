@@ -3,6 +3,7 @@ import styles from './Navigation.module.css';
 
 export default class Navigation extends Component {
     render() {
+        console.log(this.props)
         return (
             <div className={styles.wrapper}>
                 <button 
@@ -11,6 +12,7 @@ export default class Navigation extends Component {
                 </button>
                 <button 
                     className={styles.button} 
+                    disabled={this.props.disabled}
                     onClick={this.props.handleNext} >Next
                 </button>
             </div>

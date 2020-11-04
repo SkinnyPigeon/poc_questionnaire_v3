@@ -44,23 +44,23 @@ export default class Rating extends Component {
             </div>
             <div className={styles.checkboxes}>
                 <label>
-                    <input type='radio' id={0} onChange={this.handleCheckBoxes} checked={this.props.answer === 0} />
+                    <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1} />
                     <b>1</b>
                 </label>
                 <label>
-                    <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1} />
+                    <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2} />
                     <b>2</b>
                 </label>
                 <label>
-                    <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2} />
+                    <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3} />
                     <b>3</b>
                 </label>
                 <label>
-                    <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3} />
+                    <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4} />
                     <b>4</b>
                 </label>
                 <label>
-                    <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4} />
+                    <input type='radio' id={5} onChange={this.handleCheckBoxes} checked={this.props.answer === 5} />
                     <b>5</b>
                 </label>
             </div>

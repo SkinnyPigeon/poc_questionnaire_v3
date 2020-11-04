@@ -15,7 +15,7 @@ export default class QuestionComponent extends Component {
     state = {
         questions: '',
         sections: '',
-        question: 'q1',
+        question: 'q68',
     }
 
     componentDidMount() {
@@ -131,10 +131,30 @@ export default class QuestionComponent extends Component {
         return /^\d+$/.test(value);
     }
 
+    disable = () => {
+        let answer = this.state.questions[this.state.question].answer
+        if(this.state.questions[this.state.question].optional) {
+            return false;
+        }
+        if(answer === 0 || answer === "") {
+            return true;
+        }
+        return false;
+    }
+
     render() {
         let display = '';
         let max = this.countQuestions();
         let questionNumber = this.state.question.substring(1);
+        let disabled;
+        if(max > 0) {
+            disabled = this.disable();
+        }
+        let disabledSubmit = true;
+        if(max === parseInt(questionNumber) && !disabled) {
+            disabledSubmit = false;
+            disabled = true;
+        }
         this.state.questions ? display = <div className={styles.wrapper}>
             <h3 className={styles.question}>{this.state.questions[this.state.question].question}</h3>
             <Rating 
@@ -150,9 +170,15 @@ export default class QuestionComponent extends Component {
             <Navigation 
                 handleNext={this.handleNext} 
                 handlePrevious={this.handlePrevious} 
+                disabled={disabled}
             />
             <ProgressTracker max={String(max)} value={questionNumber}/>
-            <Submit questions={this.state.questions} caseStudy={this.props.caseStudy} />
+            <Submit 
+                questions={this.state.questions} 
+                caseStudy={this.props.caseStudy} 
+                disabled={disabledSubmit}
+                display={disabledSubmit}
+            />
         </div> : display = '';                                                         
         return (
             <div>

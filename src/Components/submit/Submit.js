@@ -46,9 +46,17 @@ export default class Submit extends Component {
     }
 
     render() {
+        console.log(this.props)
+        let className = this.props.disabled ? styles.hidden : styles.wrapper;
         return (
-            <div className={styles.wrapper}>
-                <button id="submitButton" onClick={this.handleSubmission} onKeyDown={this.handleKeyDown} on>Submit</button>
+            <div className={className}>
+                <button 
+                    id="submitButton" 
+                    onClick={this.handleSubmission} 
+                    onKeyDown={this.handleKeyDown} disabled={this.props.disabled}
+                >
+                    Submit
+                </button>
             </div>
         )
     }

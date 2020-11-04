@@ -9,3 +9,7 @@
     /* border-color: #84c20e; */
     opacity: 1;
 }
+
+.hidden {
+    display: none;
+}

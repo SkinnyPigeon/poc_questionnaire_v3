@@ -20,7 +20,7 @@ const ustanPatientQuestions = {
         },
         q4: {
             question: "How would you rate your computer literacy?",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Beginner", "Advanced"]
         },
@@ -32,73 +32,73 @@ const ustanPatientQuestions = {
         },
         q6: {
             question: "I think that I would like to use the FlexPass system frequently",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q7: {
             question: "I found the FlexPass system unnecessarily complex",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q8: {
             question: "I thought the FlexPass system was easy to use",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q9: {
             question: "I think that I would need the support of a technical person to be able to use the FlexPass system",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q10: {
             question: "I found the various functions in the FlexPass system were well integrated",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q11: {
             question: "I thought there was too much inconsistency in the FlexPass system",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q12: {
             question: "I would imagine that most people would learn to use the FlexPass system very quickly",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q13: {
             question: "I found the FlexPass system very cumbersome to use",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q14: {
             question: "I felt very confident using the FlexPass system",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q15: {
             question: "I needed to learn a lot of things before I could get going with the FlexPass system",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
         q16: {
             question: "Overall, how difficult or easy did you find the password creation task in FlexPass?",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Very difficult", "Very easy"]
         },
         q17: {
             question: "Overall, how slow or fast did you find the password creation task in FlexPass?",
-            answer: '',
+            answer: 0,
             type: 'checkbox',
             values: ["Slow", "Fast"]
         },
@@ -123,27 +123,32 @@ const ustanPatientQuestions = {
         q21: {
             question: "Did the image scenery impact your password selections (i.e., did you create a certain story when selecting points on the image, did you consider any past experiences as part of your selections)? If yes, please explain how the image scenery impacted your password selections (optional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q22: {
             question: "How did you decide where to draw the gestures on the image? (optional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q23: {
             question: "How did you decide which gesture (tap, line, or circle) to draw? (optional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q24: {
             question: "What strategy did you follow to create your password? (optional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q25: {
             question: "What type of background image would you prefer? (optional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q26: {
             question: "Overall, how difficult or easy did you find the login task in FlexPass?",
@@ -262,12 +267,14 @@ const ustanPatientQuestions = {
         q45: {
             question: "What are the positive aspects you like in the FlexPass password system? (optional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q46: {
             question: "What are the negative aspects you do not like in the FlexPass password system? (optional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q47: {
             question: "I would be willing to use the FlexPass password system as an alternative user authentication system to login to my user account",
