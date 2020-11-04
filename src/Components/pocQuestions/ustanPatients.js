@@ -10,13 +10,13 @@ const ustanPatientQuestions = {
             question: "What is your Age range (in years)?",
             answer: 0,
             type: 'select',
-            values: ["Please select", "18-25", "26-35", "36-45", "46-55", "56-65", "66 and above"]
+            values: ["Select your answer", "18-25", "26-35", "36-45", "46-55", "56-65", "66 and above"]
         },
         q3: {
             question: "What is your highest degree of education?",
             answer: 0,
             type: 'select',
-            values: ["Please select", "Ph.D. Studies", "Master Studies", "Bachelor Studies", "High School", "Primary School"]
+            values: ["Select your answer", "Ph.D. Studies", "Master Studies", "Bachelor Studies", "High School", "Primary School"]
         },
         q4: {
             question: "How would you rate your computer literacy?",
@@ -28,7 +28,7 @@ const ustanPatientQuestions = {
             question: "Do you currently have regular access to a computer?",
             answer: 0,
             type: 'select',
-            values: ["Please select", "Yes", "No"]
+            values: ["Select your answer", "Yes", "No"]
         },
         q6: {
             question: "I think that I would like to use the FlexPass system frequently",
@@ -178,43 +178,49 @@ const ustanPatientQuestions = {
             question: "Did you successfully install and enroll to the two-factor authentication mobile application?",
             answer: 0,
             type: 'select',
-            values: ["Please select", "Yes", "No"]
+            values: ["Select your answer", "Yes", "No"]
         },
         q31: {
             question: "If your answer was 'Yes', which two-factor authentication method did you use to login?",
             answer: 0,
             type: 'select',
-            values: ["Please select", "Push notification message", "Secret code (Time-based One-Time Password - TOTP)"]
+            values: ["Select your answer", "Push notification message", "Secret code (Time-based One-Time Password - TOTP)"],
+            optional: false
         },
         q32: {
             question: "Did you successfully access the system after using the two-factor authentication method?",
             answer: 0,
             type: 'select',
-            values: ["Please select", "Yes", "No"]
+            values: ["Select your answer", "Yes", "No"],
+            optional: false
         },
         q33: {
             question: "Overall, how difficult or easy did you find the installation and enrollment to the two-factor authentication mobile application?",
             answer: '',
             type: 'checkbox',
-            values: ["Very difficult", "Very easy"]
+            values: ["Very difficult", "Very easy"],
+            optional: false
         },
         q34: {
             question: "Overall, how difficult or easy did you find the two-factor authentication approval task (push notification or secret code)?",
             answer: '',
             type: 'checkbox',
-            values: ["Very difficult", "Very easy"]
+            values: ["Very difficult", "Very easy"],
+            optional: false
         },
         q35: {
             question: "Overall, how secure do you find the two-factor authentication mobile application?",
             answer: '',
             type: 'checkbox',
-            values: ["Very insecure", "Very secure"]
+            values: ["Very insecure", "Very secure"],
+            optional: false
         },
         q36: {
             question: "I would be willing to use the two-factor authentication mobile application in my everyday tasks",
             answer: '',
             type: 'checkbox',
-            values: ["Strongly disagree", "Strongly agree"]
+            values: ["Strongly disagree", "Strongly agree"],
+            optional: false
         },
         q37: {
             question: "Overall, how difficult or easy did you find the password reset process of the FlexPass system?",

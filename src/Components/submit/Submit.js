@@ -46,7 +46,6 @@ export default class Submit extends Component {
     }
 
     render() {
-        console.log(this.props)
         let className = this.props.disabled ? styles.hidden : styles.wrapper;
         return (
             <div className={className}>

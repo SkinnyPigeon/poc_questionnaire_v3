@@ -15,7 +15,8 @@ export default class QuestionComponent extends Component {
     state = {
         questions: '',
         sections: '',
-        question: 'q68',
+        question: 'q29',
+        skip: false
     }
 
     componentDidMount() {
@@ -64,7 +65,7 @@ export default class QuestionComponent extends Component {
     }
 
     componentDidUpdate() {
-        console.log(this.state.questions)
+        console.log(this.state)
     }
     countQuestions = () => {
         let count = 0, key;
@@ -77,12 +78,19 @@ export default class QuestionComponent extends Component {
     }
 
     handleNext = () => {
+        if(this.state.skip) {
+            this.setState({
+                question: 'q37'
+            })
+            return;
+        }
         let questionCount = this.countQuestions();
         let questionNumber = this.state.question.substring(1);
         if(questionNumber < questionCount) {
             let question = 'q' + (parseInt(questionNumber) + 1);
             this.setState({
                 question: question,
+                skip: false
             })
         }
     }
@@ -98,7 +106,6 @@ export default class QuestionComponent extends Component {
     }
     
     fillSelectOptions = (question) => {
-        console.log(question)
         let options = [];
         for(let i = 0; i < question.values.length; i++) {
             options.push(<option key={i} value={i}>{question.values[i]}</option>)
@@ -110,13 +117,38 @@ export default class QuestionComponent extends Component {
         let updatedQuestions = this.state.questions;
         if(this.isInteger(e.target.value)) {
             updatedQuestions[this.state.question].answer = parseInt(e.target.value);
-
         } else {
             updatedQuestions[this.state.question].answer = e.target.value;
         }
         this.setState({
             questions: updatedQuestions
         })
+        if(this.state.question === 'q30') {
+            this.handleQ30();
+        }
+    }
+
+    handleQ30 = () => {
+        let questionsToAlter = ['q31', 'q32', 'q33', 'q34', 'q35', 'q36']
+        let updatedQuestions = this.state.questions;
+        if(this.state.questions['q30'].answer === 2) {
+            questionsToAlter.forEach(function (question) {
+                updatedQuestions[question].optional = true;
+            })
+            this.setState({
+                questions: updatedQuestions,
+                skip: true
+            })
+        } else {
+            questionsToAlter.forEach(function (question) {
+                updatedQuestions[question].optional = false;
+            })
+            this.setState({
+                questions: updatedQuestions,
+                skip: false
+            })
+        }
+        
     }
 
     handleCheckBox = (id) => {

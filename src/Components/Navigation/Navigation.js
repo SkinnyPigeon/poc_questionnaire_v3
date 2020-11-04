@@ -3,7 +3,6 @@ import styles from './Navigation.module.css';
 
 export default class Navigation extends Component {
     render() {
-        console.log(this.props)
         return (
             <div className={styles.wrapper}>
                 <button 
