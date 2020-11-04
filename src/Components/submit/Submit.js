@@ -14,23 +14,23 @@ export default class Submit extends Component {
         console.log("Submitting")
         let results = this.extractQsAndAs()
         console.log(results)
-        // fetch('http://localhost:2021/api/send_results', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(results)
-        // })
-        // .then(response => response.json())
-        // .then(data => {
-        //     console.log('Success: ', data);
-        //     let button = document.getElementById('submitButton')
-        //     button.className = styles.success;
-        //     button.disabled = true;
-        // })
-        // .catch(error => {
-        //     console.error('Error: ', error)
-        // })
+        fetch('http://localhost:2021/api/send_results', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(results)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success: ', data);
+            let button = document.getElementById('submitButton')
+            button.className = styles.success;
+            button.disabled = true;
+        })
+        .catch(error => {
+            console.error('Error: ', error)
+        })
     }
 
     extractQsAndAs = () => {

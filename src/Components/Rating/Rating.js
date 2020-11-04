@@ -40,32 +40,32 @@ export default class Rating extends Component {
     makeCheckBoxes = () => {
         let checkboxes = <ul className={styles.checkBoxList}>
             <div className={styles.maxMin}>
-                {this.props.values[0]}
+                <h5>{this.props.values[0]}</h5>
             </div>
             <div className={styles.checkboxes}>
                 <label>
                     <input type='radio' id={0} onChange={this.handleCheckBoxes} checked={this.props.answer === 0}/>
-                    1
+                    <b>1</b>
                 </label>
                 <label>
                     <input type='radio' id={1} onChange={this.handleCheckBoxes} checked={this.props.answer === 1}/>
-                    2
+                    <b>2</b>
                 </label>
                 <label>
                     <input type='radio' id={2} onChange={this.handleCheckBoxes} checked={this.props.answer === 2}/>
-                    3
+                    <b>3</b>
                 </label>
                 <label>
                     <input type='radio' id={3} onChange={this.handleCheckBoxes} checked={this.props.answer === 3}/>
-                    4
+                    <b>4</b>
                 </label>
                 <label>
                     <input type='radio' id={4} onChange={this.handleCheckBoxes} checked={this.props.answer === 4}/>
-                    5
+                    <b>5</b>
                 </label>
             </div>
             <div className={styles.maxMin}>
-                {this.props.values[1]}
+                <h5>{this.props.values[1]}</h5>
             </div>
         </ul>
         return checkboxes;

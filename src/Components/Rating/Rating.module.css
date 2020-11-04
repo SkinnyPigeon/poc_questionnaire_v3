@@ -12,6 +12,19 @@
     /* position: relative; */
 }
 
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+b {
+    margin-top: 10px;
+}
+
+label {
+    padding: 10px;
+}
 .checkBoxList div {
     display: inline-block;
 }
@@ -24,6 +37,7 @@
 }
 
 .checkBoxList div:nth-child(1) {
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 35%;
@@ -31,24 +45,9 @@
 }
 
 .checkBoxList div:nth-child(3) {
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 65%;
     transform: translate(-35%, -50%);
 }
-
-/* .checkBoxes {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-/* .maxMin {
-    display: inline-block;
-    position: relative;
-} */
-
-/* .center {
-    position: absolute;
-} */
