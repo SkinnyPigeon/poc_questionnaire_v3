@@ -222,203 +222,212 @@ const fcrbQuestions = {
             values: ["Molt en desacord", "Molt d’acord"]
         },
         q37: {
+            question: "Did you require to reset your password?",
+            answer: '',
+            type: 'select',
+            values: ["Si us plau seleccioneu", "Sí", "No"],
+            dependencies: true,
+            linked: ['q38', 'q39'],
+            trigger: 2
+        },
+        q38: {
             question: "En general com de difícil o fàcil li ha semblat el procés de restabliment de la contrasenya del sistema FlexPass?",
             answer: '',
             type: 'checkbox',
             values: ["Molt difícil", "Molt fàcil"]
         },
-        q38: {
+        q39: {
             question: "En general com de segur troba el procés de restabliment del sistema FlexPass",
             answer: '',
             type: 'checkbox',
             values: ["Molt insegura", "Molt segura"]
         },
-        q39: {
+        q40: {
             question: "Confio en la tecnologia que fa servir el sistema de contrasenya FlexPass",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q40: {
+        q41: {
             question: "Confio en l'habilitat del sistema de contrasenya FlexPass per a protegir la meva privacitat",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q41: {
+        q42: {
             question: "No estic preocupat per la seguretat del sistema de contrasenya FlexPass",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q42: {
+        q43: {
             question: "Confio en el sistema de contrasenya FlesPass per a protegir el meu compte i les meves dades de cibercriminals",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q43: {
+        q44: {
             question: "Li agrada la idea de crear contrasenyes gràfiques amb imatges fetes a mida de la seva vida diària i experiència?",
             answer: '',
             type: 'checkbox',
             values: ["Gèns", "Extremadament"]
         },
-        q44: {
+        q45: {
             question: "Li agrada la idea de permetre als usuaris de triar de manera flexible el seu tipus d’autenticació preferida (gràfica o textual)?",
             answer: '',
             type: 'checkbox',
             values: ["Gèns", "Extremadament"]
         },
-        q45: {
+        q46: {
             question: "Quins son els aspectes positius que li agraden del sistema de contrasenya FlexPass?(opcional)?",
             answer: '',
             type: 'textarea',
             optional: true
         },
-        q46: {
+        q47: {
             question: "Quins son els aspectes negatius que no li han agradat del sistema de contrasenya FlexPass? (opcional)",
             answer: '',
             type: 'textarea',
             optional: true
         },
-        q47: {
+        q48: {
             question: "Estaria disposat a fer servir el sistema FlexPass com a sistema alternatiu d’autenticació d’usuari per a accedir a la meva compta d’usuari",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q48: {
+        q49: {
             question: "Expliqui el raonament darrere la resposta a la pregunta anterior",
             answer: '',
             type: 'textarea'
         },
-        q49: {
+        q50: {
             question: "Com de còmode o incòmode estaria si aquest sistema gestionés les seves dades mèdiques?",
             answer: '',
             type: 'checkbox',
             values: ["Molt incomode", "Molt còmode"]
         },
-        q50: {
+        q51: {
             question: "Com de capaç o incapaç considera aquest sistema per gestionar les seves dades mèdiques?",
             answer: '',
             type: 'checkbox',
             values: ["Molt incapaç", "Molt capaç"]
         },
-        q51: {
+        q52: {
             question: "Si us plau qualifiqueu com d'acord esteu amb la següent afirmació: 'Confio en aquest sistema perquè gestioni les meves dades mèdiques de manera segura'",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q52: {
+        q53: {
             question: "Usant el la tecnologia Serums seria possible compartir i obtenir informació de les meves dades mèdiques",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q53: {
+        q54: {
             question: "Usant la tecnologia Serums seria possible trobar i compartir les meves dades mèdiques de manera més eficient",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q54: {
+        q55: {
             question: "Usant la tecnologia Serums augmentaria la meva capacitat per recuperar i compartir els meus fitxers mèdics",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q55: {
+        q56: {
             question: "Consideraría la tecnología Serums útil",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q56: {
+        q57: {
             question: "Aprendre a fer servir la tecnología de Serums em sería fàcil",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q57: {
+        q58: {
             question: "Trobaria fàcil de fer que la tecnología de Serums fes el que jo volgués que fes",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q58: {
+        q59: {
             question: "Seria fàcil per a mi tornar-me hàbil en l’ús de la tecnologia de Serums",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q59: {
+        q60: {
             question: "Trobaria la tecnologia de Serums fàcil d’utilitzar",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q60: {
+        q61: {
             question: "Faria servir la tecnologia de Serums quan hagués d’accedir als meus fitxers mèdics",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q61: {
+        q62: {
             question: "Crec que la meva informació personal és només accessible a aquells autoritzats a tenir-lo",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q62: {
+        q63: {
             question: "És clar quina informació de mi guarda Serums al sistema",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q63: {
+        q64: {
             question: "És clar qui serà l’audiència de les meves dades compartides",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q64: {
+        q65: {
             question: "Crec que Serums em permet restringir l’accés a les meves dades personals a algunes persones",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q65: {
+        q66: {
             question: "Crec que tinc control sobre quina informació puc compartir via Serums",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q66: {
+        q67: {
             question: "És clar quina informació poden veure els meus cuidadors a Serums",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q67: {
+        q68: {
             question: "En general com de segur creu que és el sistema Serums",
             answer: '',
             type: 'checkbox',
             values: ["Molt insegura", "Molt segura"]
         },
-        q68: {
+        q69: {
             question: "No estic precupat per la seguretat del sistema Serums",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q69: {
+        q70: {
             question: "Confio en la habilitat del sistema Serums per a protegir la meva privacitat",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
-        q70: {
+        q71: {
             question: "Confio en la tecnologia que fa servir el sistema Serums",
             answer: '',
             type: 'checkbox',
@@ -458,47 +467,47 @@ const fcrbQuestions = {
         },
         s7: {
             title: 'Restabliment de la Contrasenya',
-            range: [37, 38],
+            range: [37, 39],
             text: 'En cas de que hagi hagut de restablir la seva contrasenya, si us plau qualifiqui la seva experiència i percepcions pel que fa al sistema i procés de restabliment de la contrasenya del sistema FlexPass'
         },
         s8: {
             title: 'Confiança',
-            range: [39, 42],
+            range: [40, 43],
             text: 'Siusplau qualifiqui la seva confiança en systema de contrasenya FlexPass'
         },
         s9: {
             title: 'Experiència i Preferència de la Contrasenya',
-            range: [43, 48],
+            range: [44, 49],
             text: 'Siusplau, expliqui la seva experiència, preferències i opinions sobre el sistema de contrasenya FlexPass'
         },
         s10: {
             title: 'Confiança del Pacient sobre Dades Mèdiques',
-            range: [49, 51],
+            range: [50, 52],
             text: ''
         },
         s11: {
             title: 'Utilitat Percebuda',
-            range: [52, 55],
+            range: [53, 56],
             text: ''
         },
         s12: {
             title: 'Percepció de Facilitat en l’Ús',
-            range: [56, 59],
+            range: [57, 60],
             text: ''
         },
         s13: {
             title: 'Intenció Conductual a usar',
-            range: [60, 60],
+            range: [61, 61],
             text: ''
         },
         s14: {
             title: 'Propietat de les Dades',
-            range: [61, 66],
+            range: [62, 67],
             text: ''
         },
         s15: {
             title: 'Seguretat percebuda del sistema Serums',
-            range: [67, 70],
+            range: [68, 71],
             text: ''
         }
     },

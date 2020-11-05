@@ -226,203 +226,212 @@ const ustanPatientQuestions = {
             optional: false
         },
         q37: {
+            question: "Did you require to reset your password?",
+            answer: '',
+            type: 'select',
+            values: ["Select your answer", "Yes", "No"],
+            dependencies: true,
+            linked: ['q38', 'q39'],
+            trigger: 2
+        },
+        q38: {
             question: "Overall, how difficult or easy did you find the password reset process of the FlexPass system?",
             answer: '',
             type: 'checkbox',
             values: ["Very difficult", "Very easy"]
         },
-        q38: {
+        q39: {
             question: "Overall, how secure did you find the password reset process of the FlexPass system?",
             answer: '',
             type: 'checkbox',
             values: ["Very insecure", "Very secure"]
         },
-        q39: {
+        q40: {
             question: "I trust in the technology the FlexPass password system is using",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q40: {
+        q41: {
             question: "I trust in the ability of the FlexPass password system to protect my privacy",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q41: {
+        q42: {
             question: "I am not worried about the security of the FlexPass password system",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q42: {
+        q43: {
             question: "I trust the FlexPass password system to protect my account and data from cybercriminals",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q43: {
+        q44: {
             question: "Do you like the idea of creating picture passwords with personalized images tailored to the users' prior daily life activities and experiences?",
             answer: '',
             type: 'checkbox',
             values: ["Not at all", "Extremely"]
         },
-        q44: {
+        q45: {
             question: "Do you like the idea of allowing users to flexibly choose their preferred authentication method (picture or text password)?",
             answer: '',
             type: 'checkbox',
             values: ["Not at all", "Extremely"]
         },
-        q45: {
+        q46: {
             question: "What are the positive aspects you like in the FlexPass password system? (optional)",
             answer: '',
             type: 'textarea',
             optional: true
         },
-        q46: {
+        q47: {
             question: "What are the negative aspects you do not like in the FlexPass password system? (optional)",
             answer: '',
             type: 'textarea',
             optional: true
         },
-        q47: {
+        q48: {
             question: "I would be willing to use the FlexPass password system as an alternative user authentication system to login to my user account",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q48: {
+        q49: {
             question: "Explain the reasoning behind your answer in the previous question",
             answer: '',
             type: 'textarea'
         },
-        q49: {
+        q50: {
             question: "How comfortable or uncomfortable would you be with this system managing your medical data?",
             answer: '',
             type: 'checkbox',
             values: ["Very uncomfortable", "Very comfortable"]
         },
-        q50: {
+        q51: {
             question: "How capable or incapable do you consider this system in handling medical data securely?",
             answer: '',
             type: 'checkbox',
             values: ["Very incapable", "Very capable"]
         },
-        q51: {
+        q52: {
             question: "Please rate your agreement with the following statement: 'I trust this system to handle my medical data in a safe and secure manner'",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q52: {
+        q53: {
             question: "Using the Serums technology would make it possible to share and get insight in my medical data",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q53: {
+        q54: {
             question: "Using the Serums technology would make finding and sharing my medical information more efficient",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q54: {
+        q55: {
             question: "Using the Serums technology would enhance my ability to retrieve and share my medical files",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q55: {
+        q56: {
             question: "I would find the Serums technology useful",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q56: {
+        q57: {
             question: "Learning to operate the Serums technology would be easy for me",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q57: {
+        q58: {
             question: "I would find it easy to get the Serums technology to do what I want it to do",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q58: {
+        q59: {
             question: "It would be easy for me to become skillful in the use of the Serums technology",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q59: {
+        q60: {
             question: "I would find the Serums technology easy to use",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q60: {
+        q61: {
             question: "I would intend to use the Serums technology when I need access to my medical files",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q61: {
+        q62: {
             question: "I believe my personal information is accessible only to those authorized to have access",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q62: {
+        q63: {
             question: "It is clear what information about me Serums keeps in the system",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q63: {
+        q64: {
             question: "It is clear who is the audience of my shared information",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q64: {
+        q65: {
             question: "I think Serums allows me to restrict the access to some of my personal information to some people",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q65: {
+        q66: {
             question: "I think I have control over what personal information I can share via Serums",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q66: {
+        q67: {
             question: "It is clear what information about me caregivers can see on Serums",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q67: {
+        q68: {
             question: "Overall, how secure do you find the Serums system?",
             answer: '',
             type: 'checkbox',
             values: ["Very insecure", "Very secure"]
         },
-        q68: {
+        q69: {
             question: "I am not worried about the security of the Serums system",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q69: {
+        q70: {
             question: "I trust in the ability of the Serums system to protect my privacy",
             answer: '',
             type: 'checkbox',
             values: ["Strongly disagree", "Strongly agree"]
         },
-        q70: {
+        q71: {
             question: "I trust in the technology the Serums system is using",
             answer: '',
             type: 'checkbox',
@@ -462,47 +471,47 @@ const ustanPatientQuestions = {
         },
         s7: {
             title: 'Password Reset',
-            range: [37, 38],
+            range: [37, 39],
             text: 'In case you have reset your password, please rate your experience and perceptions with regards to the FlexPass password reset system and process'
         },
         s8: {
             title: 'Trust',
-            range: [39, 42],
+            range: [40, 43],
             text: 'Please rate your trust towards the FlexPass password system'
         },
         s9: {
             title: 'Password Experience and Preference',
-            range: [43, 48],
+            range: [44, 49],
             text: 'Please explain your overall experience, preference and opinions with regards to the FlexPass password system'
         },
         s10: {
             title: 'Patient trust medical data',
-            range: [49, 51],
+            range: [50, 52],
             text: ''
         },
         s11: {
             title: 'Perceived Usefulness',
-            range: [52, 55],
+            range: [53, 56],
             text: ''
         },
         s12: {
             title: 'Perceived Ease of Use',
-            range: [56, 59],
+            range: [57, 60],
             text: ''
         },
         s13: {
             title: 'Behavioural Intention to use',
-            range: [60, 60],
+            range: [61, 61],
             text: ''
         },
         s14: {
             title: 'Data ownership',
-            range: [61, 66],
+            range: [62, 67],
             text: ''
         },
         s15: {
             title: 'Perceived security of Serums system',
-            range: [67, 70],
+            range: [68, 71],
             text: ''
         }
     },
