@@ -16,30 +16,34 @@ export default class QuestionComponent extends Component {
     state = {
         questions: '',
         sections: '',
-        question: 'q70',
-        section: 's15',
-        skip: false
+        question: 'q29',
+        section: 's5',
+        skip: false,
+        sectionTranslation: ''
     }
 
     componentDidMount() {
         let questions = '';
         let sections = '';
         let message = '';
+        let sectionTranslation = '';
         switch(this.props.hospital) {
             case 'FCRB':
                 questions = fcrbQuestions['questions'];
                 sections = fcrbQuestions['sections'];
+                sectionTranslation = fcrbQuestions['sectionTranslation'];
                 break;
             case 'USTAN':
                 switch(this.props.type) {
                     case 'PATIENT':
                         questions = ustanPatientQuestions['questions'];
                         sections = ustanPatientQuestions['sections'];
-                        message = ustanPatientQuestions['message'];
+                        sectionTranslation = ustanPatientQuestions['sectionTranslation'];
                         break;
                     case 'PROFESSIONAL':
                         questions = ustanProfessionalQuestions['questions'];
                         sections = ustanProfessionalQuestions['sections'];
+                        sectionTranslation = ustanProfessionalQuestions['sectionTranslation'];
                         break;
                     default:
                         break;
@@ -50,10 +54,12 @@ export default class QuestionComponent extends Component {
                     case 'PATIENT':
                         questions = zmcPatientQuestions['questions'];
                         sections = zmcPatientQuestions['sections'];
+                        sectionTranslation = zmcPatientQuestions['sectionTranslation'];
                         break;
                     case 'PROFESSIONAL':
                         questions = zmcProfessionalQuestions['questions'];
                         sections = zmcProfessionalQuestions['sections'];
+                        sectionTranslation = zmcProfessionalQuestions['sectionTranslation'];
                         break;
                     default:
                         break;
@@ -65,7 +71,8 @@ export default class QuestionComponent extends Component {
         this.setState({
             questions: questions,
             sections: sections,
-            message: message
+            message: message,
+            sectionTranslation: sectionTranslation,
         })
     }
 
@@ -173,7 +180,7 @@ export default class QuestionComponent extends Component {
         this.setState({
             questions: updatedQuestions
         })
-        if(this.state.question === 'q30') {
+        if(this.state.question === 'q30' && this.props.type === 'PATIENT') {
             this.handleQ30();
         }
     }
@@ -258,7 +265,11 @@ export default class QuestionComponent extends Component {
                 handlePrevious={this.handlePrevious} 
                 disabled={disabled}
             />
-            <ProgressTracker max={String(sectionCount)} value={sectionNumber}/>
+            <ProgressTracker 
+                max={String(sectionCount)} 
+                value={sectionNumber}
+                sectionTranslation={this.state.sectionTranslation}
+            />
             <Submit 
                 questions={this.state.questions} 
                 caseStudy={this.props.caseStudy} 

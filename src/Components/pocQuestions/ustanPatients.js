@@ -503,7 +503,8 @@ const ustanPatientQuestions = {
             text: ''
         }
     },
-    message: "Skipping questions due to answer provided on Q30"
+    message: "Skipping questions due to answer provided on Q30",
+    sectionTranslation: "Section"
 }
 
 export default ustanPatientQuestions;

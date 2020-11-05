@@ -370,7 +370,8 @@ const zmcProfessionalQuestions = {
             range: [48, 51],
             text: ''
         }
-    }
+    },
+    sectionTranslation: "Sectie"
 }
 
 export default zmcProfessionalQuestions;

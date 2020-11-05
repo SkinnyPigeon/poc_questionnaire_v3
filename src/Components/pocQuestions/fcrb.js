@@ -125,27 +125,32 @@ const fcrbQuestions = {
         q21: {
             question: "L'escena representada a la imatge ha tingut impacte en la selecció de la contrasenya (és a dir, ha creat una història concreta a l'hora de seleccionar punts en la imatge, ha considerat alguna experiència passada com a part de la seva selecció)? Si és així expliqui com la escena de la imatge ha intervingut en la selecció de la seva contrasenya",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q22: {
             question: "Com ha decidit on dibuixar els gestos a la imatge? (opcional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q23: {
             question: "Com ha decidit quin gest (punt, línia o cercle) dibuixar? (opcional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q24: {
             question: "Quina estratègia ha seguit per a crear la seva contrasenya? (opcional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q25: {
             question: "Quin tipus d'imatge de fons preferiria? (opcional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q26: {
             question: "En general, com consideres de difícil o fàcil la tasca d'accés a FlexPass?",
@@ -264,12 +269,14 @@ const fcrbQuestions = {
         q45: {
             question: "Quins son els aspectes positius que li agraden del sistema de contrasenya FlexPass?(opcional)?",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q46: {
             question: "Quins son els aspectes negatius que no li han agradat del sistema de contrasenya FlexPass? (opcional)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q47: {
             question: "Estaria disposat a fer servir el sistema FlexPass com a sistema alternatiu d’autenticació d’usuari per a accedir a la meva compta d’usuari",
@@ -492,7 +499,8 @@ const fcrbQuestions = {
             text: ''
         }
     },
-    message: "Skipping questions due to answer provided on Q30"
+    message: "Skipping questions due to answer provided on Q30",
+    sectionTranslation: "Secció"
 }
 
 export default fcrbQuestions;

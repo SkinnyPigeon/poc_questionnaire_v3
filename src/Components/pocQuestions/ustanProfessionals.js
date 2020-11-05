@@ -370,7 +370,8 @@ const ustanProfessionalQuestions = {
             range: [48, 51],
             text: ''
         }
-    }
+    },
+    sectionTranslation: "Section"
 }
 
 export default ustanProfessionalQuestions;

@@ -6,7 +6,7 @@ export default class ProgressTracker extends Component {
         return (
             <div className={styles.wrapper}>
                 <input type="range" min="1" max={this.props.max} value={this.props.value} readOnly={true} />
-                <p>Section: {this.props.value} / {this.props.max}</p>
+                <p>{this.props.sectionTranslation}: {this.props.value} / {this.props.max}</p>
             </div>
         )
     }

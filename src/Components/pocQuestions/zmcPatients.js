@@ -123,27 +123,32 @@ const zmcPatientQuestions = {
         q21: {
             question: "Heeft het beelddecor invloed gehad op uw wachtwoordselecties (b.v. heeft u een bepaald verhaal gecreëerd bij het selecteren van punten op de afbeelding, heeft u eerdere ervaringen in aanmerking genomen als onderdeel van uw selecties)? Zo ja, kunt u hieronder uitleggen hoe de afbeelding de wachtwoordselecties heeft beïnvloed (optioneel)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q22: {
             question: "Hoe heb je besloten waar je de gebaren op het beeld tekent? (optioneel)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q23: {
             question: "Hoe heb je besloten welk gebaar (tik, lijn of cirkel) je moet maken? (optioneel)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q24: {
             question: "Welke strategie heeft u gevolgd om uw wachtwoord aan te maken? (optioneel)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q25: {
             question: "Wat voor soort achtergrondafbeelding heeft uw voorkeur? (optioneel)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q26: {
             question: "Over het geheel genomen, hoe moeilijk of gemakkelijk vond je de login-taak in FlexPass?",
@@ -262,12 +267,14 @@ const zmcPatientQuestions = {
         q45: {
             question: "Wat zijn de positieve aspecten van het FlexPass-wachtwoordsysteem? (optioneel)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q46: {
             question: "Wat zijn de negatieve aspecten die je niet leuk vindt in het FlexPass wachtwoordsysteem? (optioneel)",
             answer: '',
-            type: 'textarea'
+            type: 'textarea',
+            optional: true
         },
         q47: {
             question: "Ik zou bereid zijn om het FlexPass wachtwoordsysteem te gebruiken als alternatief gebruikersverificatiesysteem om in te loggen op mijn gebruikersaccount",
@@ -490,7 +497,8 @@ const zmcPatientQuestions = {
             text: ''
         }
     },
-    message: "Er worden vragen overgeslagen i.v.m. uw antwoord op vraag 30"
+    message: "Er worden vragen overgeslagen i.v.m. uw antwoord op vraag 30",
+    sectionTranslation: "Sectie"
 }
 
 export default zmcPatientQuestions;
