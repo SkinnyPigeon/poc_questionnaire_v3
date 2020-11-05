@@ -489,7 +489,8 @@ const zmcPatientQuestions = {
             range: [67, 70],
             text: ''
         }
-    }
+    },
+    message: "Er worden vragen overgeslagen i.v.m. uw antwoord op vraag 30"
 }
 
 export default zmcPatientQuestions;

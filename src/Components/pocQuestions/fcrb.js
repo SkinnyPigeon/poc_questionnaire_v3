@@ -491,7 +491,8 @@ const fcrbQuestions = {
             range: [67, 70],
             text: ''
         }
-    }
+    },
+    message: "Skipping questions due to answer provided on Q30"
 }
 
 export default fcrbQuestions;
