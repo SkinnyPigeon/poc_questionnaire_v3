@@ -178,7 +178,10 @@ const zmcPatientQuestions = {
             question: "Heeft u met succes de twee-factor authenticatie mobiele applicatie geïnstalleerd en ingeschreven?",
             answer: 0,
             type: 'select',
-            values: ["Maak hier uw keuze", "Ja", "Nee"]
+            values: ["Maak hier uw keuze", "Ja", "Nee"],
+            dependencies: true,
+            linked: ['q31', 'q32', 'q33', 'q34', 'q35', 'q36'],
+            trigger: 2
         },
         q31: {
             question: "Als uw antwoord 'Ja' was, welke twee-factor authenticatiemethode heeft u dan gebruikt om in te loggen?",

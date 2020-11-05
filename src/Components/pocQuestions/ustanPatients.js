@@ -178,7 +178,10 @@ const ustanPatientQuestions = {
             question: "Did you successfully install and enroll to the two-factor authentication mobile application?",
             answer: 0,
             type: 'select',
-            values: ["Select your answer", "Yes", "No"]
+            values: ["Select your answer", "Yes", "No"],
+            dependencies: true,
+            linked: ['q31', 'q32', 'q33', 'q34', 'q35', 'q36'],
+            trigger: 2
         },
         q31: {
             question: "If your answer was 'Yes', which two-factor authentication method did you use to login?",

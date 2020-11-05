@@ -108,10 +108,13 @@ export default class QuestionComponent extends Component {
     }
 
     handleNext = () => {
+        let sectionNumber = this.state.section.substring(1);
         if(this.state.skip) {
+            let skipSection = 's' + (parseInt(sectionNumber) + 1);
+            let skipQuestion = 'q' + this.state.sections[skipSection].range[0];
             this.setState({
-                question: 'q37',
-                section: 's7',
+                question: skipQuestion,
+                section: skipSection,
                 showMessage: true,
                 skip: false
             })
@@ -180,15 +183,16 @@ export default class QuestionComponent extends Component {
         this.setState({
             questions: updatedQuestions
         })
-        if(this.state.question === 'q30' && this.props.type === 'PATIENT') {
-            this.handleQ30();
+        if(this.state.questions[this.state.question].dependencies) {
+            this.handleDependentQuestions();
         }
     }
 
-    handleQ30 = () => {
-        let questionsToAlter = ['q31', 'q32', 'q33', 'q34', 'q35', 'q36']
+    handleDependentQuestions = () => {
+        let question = this.state.questions[this.state.question];
+        let questionsToAlter = question.linked;
         let updatedQuestions = this.state.questions;
-        if(this.state.questions['q30'].answer === 2) {
+        if(question.answer === question.trigger) {
             questionsToAlter.forEach(function (question) {
                 updatedQuestions[question].optional = true;
             })

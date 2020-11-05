@@ -180,7 +180,10 @@ const fcrbQuestions = {
             question: "Ha pogut instal·lar i inscriure’t a l’aplicació d’autenticació de dos factors amb èxit?",
             answer: 0,
             type: 'select',
-            values: ["Si us plau seleccioneu", "Sí", "No"]
+            values: ["Si us plau seleccioneu", "Sí", "No"],
+            dependencies: true,
+            linked: ['q31', 'q32', 'q33', 'q34', 'q35', 'q36'],
+            trigger: 2
         },
         q31: {
             question: "Si la seva resposta ha sigut «Sí», quin mètode d’autenticació de dos factors ha fet servir per a accedir?",
