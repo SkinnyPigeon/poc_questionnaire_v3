@@ -3,10 +3,21 @@ import styles from './FlashMessage.module.css';
 
 export default class FlashMessage extends Component {
 
+
+    componentDidUpdate() {
+        const message = document.getElementById("message");
+        message.style.display = "block";
+        message.addEventListener("animationend", (ev) => {
+        if (ev.type === "animationend") {
+            message.style.display = "none";
+        }
+        }, false);
+    }
+
     display = () => {
-        let display = '';
+        let display = <div id="message"></div>;
         if(this.props.display) {
-            display = <div className={styles.show}>
+            display = <div className={styles.show} id="message">
                 {this.props.message}
             </div>
         }
@@ -18,7 +29,7 @@ export default class FlashMessage extends Component {
         let display = this.display()
         return (
             <div>
-                {display}
+                <b>{display}</b>
             </div>
         )
     }
