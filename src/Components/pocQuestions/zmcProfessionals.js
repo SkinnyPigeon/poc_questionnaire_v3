@@ -371,7 +371,9 @@ const zmcProfessionalQuestions = {
             text: ''
         }
     },
-    sectionTranslation: "Sectie"
+    sectionTranslation: "Sectie",
+    next: "De volgende",
+    previous: "Worige"
 }
 
 export default zmcProfessionalQuestions;

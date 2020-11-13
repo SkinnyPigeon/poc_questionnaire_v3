@@ -10,13 +10,13 @@ const zmcPatientQuestions = {
             question: "Wat is uw leeftijdscategorie (in jaren)?",
             answer: 0,
             type: 'select',
-            values: ["18-25", "26-35", "36-45", "46-55", "56-65", "66 en hoger"]
+            values: ["Maak hier uw keuze", "18-25", "26-35", "36-45", "46-55", "56-65", "66 en hoger"]
         },
         q3: {
             question: "Wat is je hoogste opleidingsniveau?",
             answer: 0,
             type: 'select',
-            values: ["Ph.D. opleiding", "Master opleiding", "Bachelor opleiding", "Middelbare opleiding", "Basis school"]
+            values: ["Maak hier uw keuze", "Ph.D. opleiding", "Master opleiding", "Bachelor opleiding", "Middelbare opleiding", "Basis school"]
         },
         q4: {
             question: "Hoe zou u uw computervaardigheden beoordelen?",
@@ -28,7 +28,7 @@ const zmcPatientQuestions = {
             question: "Té accés regular a un ordinador?",
             answer: 0,
             type: 'select',
-            values: ["Ja", "Nee"]
+            values: ["Maak hier uw keuze", "Ja", "Nee"]
         },
         q6: {
             question: "Ik denk dat ik het FlexPass systeem regelmatig wil gebruiken",
@@ -220,7 +220,7 @@ const zmcPatientQuestions = {
             values: ["Sterk oneens", "Sterk mee eens"]
         },
         q37: {
-            question: "Did you require to reset your password?",
+            question: "Heeft u uw wachtwoord moeten resetten?",
             answer: '',
             type: 'select',
             values: ["Maak hier uw keuze", "Ja", "Nee"],
@@ -510,7 +510,9 @@ const zmcPatientQuestions = {
         }
     },
     message: "Er worden vragen overgeslagen i.v.m. uw antwoord op vraag 30",
-    sectionTranslation: "Sectie"
+    sectionTranslation: "Sectie",
+    next: "De volgende",
+    previous: "Worige"
 }
 
 export default zmcPatientQuestions;

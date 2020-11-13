@@ -371,7 +371,9 @@ const ustanProfessionalQuestions = {
             text: ''
         }
     },
-    sectionTranslation: "Section"
+    sectionTranslation: "Section",
+    next: "Next",
+    previous: "Previous"
 }
 
 export default ustanProfessionalQuestions;

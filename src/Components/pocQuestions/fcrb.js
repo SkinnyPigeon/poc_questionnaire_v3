@@ -222,7 +222,7 @@ const fcrbQuestions = {
             values: ["Molt en desacord", "Molt d’acord"]
         },
         q37: {
-            question: "Did you require to reset your password?",
+            question: "Heu requerit restablir la contrasenya?",
             answer: '',
             type: 'select',
             values: ["Si us plau seleccioneu", "Sí", "No"],
@@ -512,7 +512,9 @@ const fcrbQuestions = {
         }
     },
     message: "Skipping questions due to answer provided on Q30",
-    sectionTranslation: "Secció"
+    sectionTranslation: "Secció",
+    next: "Següent",
+    pervious: "Previ"
 }
 
 export default fcrbQuestions;

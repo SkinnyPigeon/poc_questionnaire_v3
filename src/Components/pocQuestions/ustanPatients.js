@@ -516,7 +516,9 @@ const ustanPatientQuestions = {
         }
     },
     message: "Skipping questions due to answer provided on Q30",
-    sectionTranslation: "Section"
+    sectionTranslation: "Section",
+    next: "Next",
+    previous: "Previous"
 }
 
 export default ustanPatientQuestions;
