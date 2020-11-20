@@ -75,6 +75,10 @@ export default class Rating extends Component {
         this.props.handleCheckBox(parseInt(e.target.id))
     }
 
+    makeConsentForm = () => {
+        console.log(this.props)
+    }
+
     selectRating() {
         let type = '';
         switch (this.props.rating) {
@@ -106,8 +110,11 @@ export default class Rating extends Component {
                 </textarea>
                 break;
             case 'checkbox':
-                type = this.makeCheckBoxes(this.props.values)
+                type = this.makeCheckBoxes(this.props.values);
                 break;
+            case 'consent':
+                type = this.makeConsentForm();
+                break
             default:
                 break;
         }

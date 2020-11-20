@@ -8,6 +8,7 @@ import Navigation from '../Navigation/Navigation';
 import ProgressTracker from '../progressTracker/ProgressTracker';
 import Rating from '../Rating/Rating';
 import Submit from '../submit/Submit';
+import ConsentButton from '../ConsentButton/ConsentButton';
 // import FlashMessage from '../FlashMessage/FlashMessage';
 
 import styles from './QuestionComponent.module.css';
@@ -16,10 +17,11 @@ export default class QuestionComponent extends Component {
     state = {
         questions: '',
         sections: '',
-        question: 'q1',
-        section: 's1',
+        question: 'q0',
+        section: 's0',
         skip: false,
-        sectionTranslation: ''
+        sectionTranslation: '',
+        start: false
     }
 
     componentDidMount() {
@@ -73,6 +75,7 @@ export default class QuestionComponent extends Component {
             sections: sections,
             message: message,
             sectionTranslation: sectionTranslation,
+            start: true
         })
     }
 
@@ -116,7 +119,8 @@ export default class QuestionComponent extends Component {
                 question: skipQuestion,
                 section: skipSection,
                 showMessage: true,
-                skip: false
+                skip: false,
+                start: false
             })
             return;
         }
@@ -127,7 +131,8 @@ export default class QuestionComponent extends Component {
             this.setState({
                 question: question,
                 skip: false,
-                showMessage: false
+                showMessage: false,
+                start: false
             })
             if(!this.checkSection(parseInt(questionNumber) + 1)) {
                 let sectionCount = this.countSections();
@@ -137,7 +142,8 @@ export default class QuestionComponent extends Component {
                     this.setState({
                         section: section,
                         skip: false,
-                        showMessage: false
+                        showMessage: false,
+                        start: false
                     })
                 }
             }
@@ -147,7 +153,7 @@ export default class QuestionComponent extends Component {
 
     handlePrevious = () => {
         let questionNumber = this.state.question.substring(1);
-        if(questionNumber > 1) {
+        if(questionNumber > 0) {
             let question = 'q' + (parseInt(questionNumber) - 1);
             this.setState({
                 question: question,
@@ -155,11 +161,16 @@ export default class QuestionComponent extends Component {
             })
             if(!this.checkSection(parseInt(questionNumber) - 1)) {
                 let sectionNumber = this.state.section.substring(1);
-                if(sectionNumber > 1) {
+                if(sectionNumber > 0) {
                     let section = 's' + (parseInt(sectionNumber) - 1);
                     this.setState({
                         section: section
                     })
+                    if(section === 's0') {
+                        this.setState({
+                            start: true
+                        })
+                    }
                 }
             }
         }
@@ -235,7 +246,7 @@ export default class QuestionComponent extends Component {
     }
 
     render() {
-        let display = '';
+        let display, consent = '';
         let questionCount = this.countQuestions();
         let questionNumber = this.state.question.substring(1);
         let sectionCount = this.countSections();
@@ -250,10 +261,10 @@ export default class QuestionComponent extends Component {
             disabled = true;
         }
         this.state.questions ? display = <div className={styles.wrapper}>
-            <h1>{this.state.sections[this.state.section].title}</h1>
+            <h5 className={styles.title}>{this.state.sections[this.state.section].title}</h5>
             <h5 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h5>
             <div className={styles.line}></div>
-            <h3 className={styles.question}>{this.state.questions[this.state.question].question}</h3>
+            <div className={styles.question}>{this.state.questions[this.state.question].question}</div>
             <Rating 
                 question={this.state.question} 
                 rating={this.state.questions[this.state.question].type} 
@@ -280,8 +291,15 @@ export default class QuestionComponent extends Component {
                 disabled={disabledSubmit}
                 display={disabledSubmit}
             />
-            {/* <FlashMessage message={this.state.message} display={this.state.showMessage} /> */}
-        </div> : display = '';                                                         
+        </div> : display = '';   
+        this.state.start ? consent = <div className={styles.wrapper}>
+            <h5 className={styles.title}>{this.state.sections[this.state.section].title}</h5>
+            <h5 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h5>
+            <div className={styles.line}></div>
+            <div className={styles.question}>{this.state.questions[this.state.question].question}</div>
+            <ConsentButton handleNext={this.handleNext} consent="I consent"/>
+        </div>  : consent = false;    
+        consent ? display = consent : display = display
         return (
             <div>
                 {display}

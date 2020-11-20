@@ -1,7 +1,49 @@
 const ustanPatientQuestions = {
     questions: {
         q0: {
-            question: 
+            question: <div>
+                {/* <h3>Thank you for participating in this user study for the EU Horizon 2020 research project Serums</h3> */}
+                <p style={{"fontSize": "0.85em"}}>
+                    The main purpose of this study is to elicit the end-users opinions, preference and likeability with regards to the Serums Smart Health Centre Systems, a novel technology that aims to provide a more secure and simple access to medical records in a user friendly way.
+                    <br />
+                    <br />
+                    Before taking part in this study please read the information below. When you are finished, click on the 'I consent' option at the bottom of this page if you understand the statements and freely consent to participate in this study.
+                    <br />
+                    <br />
+                    The user study will take about 45-75 minutes. Your answers will be treated confidentially and anonymously.
+                    <br />
+                    Participation in the study is voluntary and can be cancelled at any time. You can terminate your participation at any time. In doing so, you also object to the use of your data collected up to that point.
+                    <br />
+                    <br />
+                    The data collected as part of this study and described above will be treated confidentially. Furthermore, the results of the study will be published in anonymous form, i.e., without your data being personally identifiable.
+                    <br />
+                    There are no risks to individuals participating in this study beyond those that exist in daily life.
+                    <br />
+                    <br />
+                    For further questions about this study, the project or about the way your contribution will be used, please feel free to contact us.
+                    <br />
+                    Thank you for taking your time to support this project!
+                    <br />
+                    </p>
+                    <hr />
+                    <p>
+                    Consent
+                    <br />
+                    By clicking the 'I consent' button you declare that you
+                    <br />
+                    <i>
+                    1) understand the purpose of the study,
+                    <br />
+                    2) are over 18 years old,
+                    <br />
+                    3) voluntarily participate in this study, and
+                    <br />
+                    4) have taken note and understand the study information presented above
+                    </i>
+                </p>
+            </div>,
+            answer: 1,
+            type: 'consent'
         },
         q1: {
             question: "Please enter your User ID that was provided by the researcher" ,
@@ -442,6 +484,11 @@ const ustanPatientQuestions = {
         }
     },
     sections: {
+        s0: {
+            title: 'Thank you for participating in this user study for the EU Horizon 2020 research project Serums',
+            range: [0, 0],
+            text: ''
+        },
         s1: {
             title: 'User ID',
             range: [1, 1],
