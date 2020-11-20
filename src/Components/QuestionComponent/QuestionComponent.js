@@ -16,8 +16,8 @@ export default class QuestionComponent extends Component {
     state = {
         questions: '',
         sections: '',
-        question: 'q29',
-        section: 's5',
+        question: 'q1',
+        section: 's1',
         skip: false,
         sectionTranslation: ''
     }
