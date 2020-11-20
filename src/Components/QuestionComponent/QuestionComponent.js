@@ -160,12 +160,12 @@ export default class QuestionComponent extends Component {
     }
 
     handlePrevious = () => {
-        let minSection = 0;
+        let minQuestion = 0;
         if(this.props.hospital === 'FCRB') {
-            minSection = 1;
+            minQuestion = 1;
         }
         let questionNumber = this.state.question.substring(1);
-        if(questionNumber > minSection) {
+        if(questionNumber > minQuestion) {
             let question = 'q' + (parseInt(questionNumber) - 1);
             this.setState({
                 question: question,
@@ -173,7 +173,7 @@ export default class QuestionComponent extends Component {
             })
             if(!this.checkSection(parseInt(questionNumber) - 1)) {
                 let sectionNumber = this.state.section.substring(1);
-                if(sectionNumber > minSection) {
+                if(sectionNumber > minQuestion) {
                     let section = 's' + (parseInt(sectionNumber) - 1);
                     this.setState({
                         section: section
