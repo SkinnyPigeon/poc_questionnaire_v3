@@ -29,11 +29,18 @@ export default class QuestionComponent extends Component {
         let sections = '';
         let message = '';
         let sectionTranslation = '';
+        let section = 's0';
+        let question = 'q0';
+        let start = true;
         switch(this.props.hospital) {
             case 'FCRB':
                 questions = fcrbQuestions['questions'];
                 sections = fcrbQuestions['sections'];
                 sectionTranslation = fcrbQuestions['sectionTranslation'];
+                section = 's1';
+                question = 'q1';
+                start = false;
+
                 break;
             case 'USTAN':
                 switch(this.props.type) {
@@ -75,7 +82,9 @@ export default class QuestionComponent extends Component {
             sections: sections,
             message: message,
             sectionTranslation: sectionTranslation,
-            start: true
+            start: start,
+            section: section,
+            question: question
         })
     }
 
@@ -148,12 +157,15 @@ export default class QuestionComponent extends Component {
                 }
             }
         }
-        
     }
 
     handlePrevious = () => {
+        let minSection = 0;
+        if(this.props.hospital === 'FCRB') {
+            minSection = 1;
+        }
         let questionNumber = this.state.question.substring(1);
-        if(questionNumber > 0) {
+        if(questionNumber > minSection) {
             let question = 'q' + (parseInt(questionNumber) - 1);
             this.setState({
                 question: question,
@@ -161,7 +173,7 @@ export default class QuestionComponent extends Component {
             })
             if(!this.checkSection(parseInt(questionNumber) - 1)) {
                 let sectionNumber = this.state.section.substring(1);
-                if(sectionNumber > 0) {
+                if(sectionNumber > minSection) {
                     let section = 's' + (parseInt(sectionNumber) - 1);
                     this.setState({
                         section: section
