@@ -9,7 +9,6 @@ import ProgressTracker from '../progressTracker/ProgressTracker';
 import Rating from '../Rating/Rating';
 import Submit from '../submit/Submit';
 import ConsentButton from '../ConsentButton/ConsentButton';
-// import FlashMessage from '../FlashMessage/FlashMessage';
 
 import styles from './QuestionComponent.module.css';
 
@@ -29,6 +28,9 @@ export default class QuestionComponent extends Component {
         let sections = '';
         let message = '';
         let sectionTranslation = '';
+        // let section = 's15';
+        // let question = 'q70';
+        // let start = false;
         let section = 's0';
         let question = 'q0';
         let start = true;
@@ -98,7 +100,7 @@ export default class QuestionComponent extends Component {
         console.log(this.state)
     }
     countQuestions = () => {
-        let count = 0, key;
+        let count = -1, key;
         for(key in this.state.questions) {
             if(this.state.questions.hasOwnProperty(key)) {
                 count++;
@@ -108,7 +110,7 @@ export default class QuestionComponent extends Component {
     }
 
     countSections = () => {
-        let count = 0, key;
+        let count = -1, key;
         for(key in this.state.sections) {
             if(this.state.sections.hasOwnProperty(key)) {
                 count++;
