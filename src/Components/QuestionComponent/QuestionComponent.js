@@ -32,15 +32,16 @@ export default class QuestionComponent extends Component {
         let section = 's0';
         let question = 'q0';
         let start = true;
+        let consent = '';
         switch(this.props.hospital) {
             case 'FCRB':
                 questions = fcrbQuestions['questions'];
                 sections = fcrbQuestions['sections'];
                 sectionTranslation = fcrbQuestions['sectionTranslation'];
-                section = 's1';
-                question = 'q1';
-                start = false;
-
+                consent = fcrbQuestions['consent']
+                // section = 's1';
+                // question = 'q1';
+                // start = false;
                 break;
             case 'USTAN':
                 switch(this.props.type) {
@@ -48,11 +49,13 @@ export default class QuestionComponent extends Component {
                         questions = ustanPatientQuestions['questions'];
                         sections = ustanPatientQuestions['sections'];
                         sectionTranslation = ustanPatientQuestions['sectionTranslation'];
+                        consent = ustanPatientQuestions['consent']
                         break;
                     case 'PROFESSIONAL':
                         questions = ustanProfessionalQuestions['questions'];
                         sections = ustanProfessionalQuestions['sections'];
                         sectionTranslation = ustanProfessionalQuestions['sectionTranslation'];
+                        consent = ustanProfessionalQuestions['consent']
                         break;
                     default:
                         break;
@@ -64,11 +67,13 @@ export default class QuestionComponent extends Component {
                         questions = zmcPatientQuestions['questions'];
                         sections = zmcPatientQuestions['sections'];
                         sectionTranslation = zmcPatientQuestions['sectionTranslation'];
+                        consent = zmcPatientQuestions['consent']
                         break;
                     case 'PROFESSIONAL':
                         questions = zmcProfessionalQuestions['questions'];
                         sections = zmcProfessionalQuestions['sections'];
                         sectionTranslation = zmcProfessionalQuestions['sectionTranslation'];
+                        consent = zmcProfessionalQuestions['consent']
                         break;
                     default:
                         break;
@@ -84,7 +89,8 @@ export default class QuestionComponent extends Component {
             sectionTranslation: sectionTranslation,
             start: start,
             section: section,
-            question: question
+            question: question,
+            consent: consent
         })
     }
 
@@ -309,7 +315,7 @@ export default class QuestionComponent extends Component {
             <h5 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h5>
             <div className={styles.line}></div>
             <div className={styles.question}>{this.state.questions[this.state.question].question}</div>
-            <ConsentButton handleNext={this.handleNext} consent="I consent"/>
+            <ConsentButton handleNext={this.handleNext} consent={this.state.consent}/>
         </div>  : consent = false;    
         consent ? display = consent : display = display
         return (

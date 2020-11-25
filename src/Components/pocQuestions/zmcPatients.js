@@ -1,5 +1,49 @@
 const zmcPatientQuestions = {
     questions: {
+        q0: {
+            question: <div>
+                <p style={{"fontSize": "0.85em"}}>
+                    Het belangrijkste doel van deze studie is om de mening, voorkeur en sympathie van de eindgebruikers te evalueren met betrekking tot het Serums Smart Health Centre Systems, een nieuwe technologie die gericht is op een veilige en gebruiksvriendelijke toegang tot uw medische dossiers.
+                    <br />
+                    <br />
+                    Voordat u aan deze studie deelneemt, dient u de onderstaande informatie te lezen. Als u klaar bent en de verklaringen begrijpt en instemt met deelname aan dit onderzoek , klikt u op de optie "Ik ga akkoord" onderaan deze pagina.
+                    <br />
+                    <br />
+                    Het gebruikersonderzoek duurt ongeveer 45-75 minuten. Uw antwoorden worden vertrouwelijk en anoniem behandeld. 
+                    <br />
+                    Deelname aan het onderzoek is vrijwillig en kan te allen tijde worden geannuleerd. U kunt uw deelname dus te allen tijde beëindigen. Daarbij maakt u ook bezwaar tegen het gebruik van uw tot dan toe verzamelde gegevens.
+                    <br />
+                    <br />
+                    De gegevens die in het kader van dit onderzoek worden verzameld en hierboven beschreven, worden vertrouwelijk behandeld. Bovendien worden de resultaten van het onderzoek in anonieme vorm gepubliceerd, d.w.z. zonder dat uw gegevens persoonlijk identificeerbaar zijn.
+                    <br />
+                    Er zijn geen risico's voor personen die deelnemen aan dit onderzoek buiten de risico's die in het dagelijks leven bestaan.
+                    <br />
+                    <br />
+                    Voor verdere vragen over dit onderzoek, het project of over de manier waarop uw bijdrage zal worden gebruikt, kunt u contact met ons opnemen.
+                    <br />
+                    Bedankt dat u de tijd heeft genomen om dit project te steunen!
+                    <br />
+                    </p>
+                    <hr />
+                    <p>
+                    Toestemming
+                    <br />
+                    Door op de knop "Ik ga akkoord" te klikken verklaart u dat u
+                    <br />
+                    <i>
+                    1) het doel van het onderzoek begrijpt,
+                    <br />
+                    2) meer dan 18 jaar oud bent,
+                    <br />
+                    3) vrijwillig deelneemt aan dit onderzoek, en
+                    <br />
+                    4) kennis heeft genomen van de hierboven gepresenteerde onderzoeksinformatie en deze begrijpt.
+                    </i>
+                </p>
+            </div>,
+            answer: 1,
+            type: 'consent'
+        },
         q1: {
             question: "Voer uw gebruikers-ID in die door de onderzoeker is verstrekt" ,
             answer: '',
@@ -433,6 +477,11 @@ const zmcPatientQuestions = {
         }
     },
     sections: {
+        s0: {
+            title: 'Dank u voor uw deelname aan deze studie voor het EU Horizon 2020-onderzoeksproject Serums',
+            range: [0, 0],
+            text: ''
+        },
         s1: {
             title: 'Gebruikers-ID',
             range: [1, 1],
@@ -512,7 +561,8 @@ const zmcPatientQuestions = {
     message: "Er worden vragen overgeslagen i.v.m. uw antwoord op vraag 30",
     sectionTranslation: "Sectie",
     next: "De volgende",
-    previous: "Worige"
+    previous: "Worige",
+    consent: "Ik ga akkoord"
 }
 
 export default zmcPatientQuestions;

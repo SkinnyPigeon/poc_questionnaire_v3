@@ -2,7 +2,6 @@ const ustanPatientQuestions = {
     questions: {
         q0: {
             question: <div>
-                {/* <h3>Thank you for participating in this user study for the EU Horizon 2020 research project Serums</h3> */}
                 <p style={{"fontSize": "0.85em"}}>
                     The main purpose of this study is to elicit the end-users opinions, preference and likeability with regards to the Serums Smart Health Centre Systems, a novel technology that aims to provide a more secure and simple access to medical records in a user friendly way.
                     <br />
@@ -568,7 +567,8 @@ const ustanPatientQuestions = {
     message: "Skipping questions due to answer provided on Q30",
     sectionTranslation: "Section",
     next: "Next",
-    previous: "Previous"
+    previous: "Previous",
+    consent: "I consent"
 }
 
 export default ustanPatientQuestions;

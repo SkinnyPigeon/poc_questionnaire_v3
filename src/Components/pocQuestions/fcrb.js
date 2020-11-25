@@ -1,5 +1,49 @@
 const fcrbQuestions = {
     questions: {
+        q0: {
+            question: <div>
+                <p style={{"fontSize": "0.85em"}}>
+                    El principal propòsit d'aquest estudi és el de cercar l'opinió dels usuaris finals i preferències pel que fa al Sistema Intel·ligent de Salut Central de Serums, una tecnologia que pretén proveir als pacients d'un accés simple i segur als seus historials mèdics d'una manera còmoda per a l'usuari.
+                    <br />
+                    <br />
+                    Abans de prendre part en l'estudi si us plau llegeixi la informació que hi ha a continuació. Quan hagi acabat premi el botó amb el text "Consenteixo" a la part baixa d'aquest document si entén les afirmacions i consenteix lliurement ser partícep aquest estudi.
+                    <br />
+                    <br />
+                    L'estudi d'usuari durarà entre 45-75 minuts. Les seves respostes seran tractades amb confidencialitat i de manera anònima.
+                    <br />
+                    La participació en aquest estudi és voluntària i pot ser cancel·lada en qualsevol moment. Pot acabar la seva participació en qualsevol moment. Fent això també anul·larà l'ús de les dades recollides fins al moment de la cancel·lació de la participació.
+                    <br />
+                    <br />
+                    Les dades recollides durant l'estudi seran tractades de manera confidencial. A demès, el resultat de l'estudi serà publicat de manera anònima, i.e., sense que les seves dades siguin identificables.
+                    <br />
+                    Participar en aquest estudi no comporta riscos especials més enllà dels que hi ha a la vida diària
+                    <br />
+                    <br />
+                    Per a possibles futures preguntes sobre l'estudi, el projecte o sobre les maneres en què la seva contribució serà usada si us plau contacti amb nosaltres.
+                    <br />
+                    Gràcies per dedicar el seu temps a donar suport a aquest projecte!
+                    <br />
+                    </p>
+                    <hr />
+                    <p>
+                    Consentiment
+                    <br />
+                    Prement el botó "Consenteixo" vostè declara que:
+                    <br />
+                    <i>
+                    1) entén el propòsit de l'estudi,
+                    <br />
+                    2) té una edat de 18 anys o més,
+                    <br />
+                    3) participa voluntàriament en aquest estudi,
+                    <br />
+                    4) ha pres nota i entén la informació de l'estudi presentada en el document
+                    </i>
+                </p>
+            </div>,
+            answer: 1,
+            type: 'consent'
+        },
         q1: {
             question: "Introdueixi el codi d'usuari proveït per l’investigador" ,
             answer: '',
@@ -435,6 +479,11 @@ const fcrbQuestions = {
         }
     },
     sections: {
+        s0: {
+            title: "Gràcies per participar en aquest estudi d'usuari del projecte Serums de l'EU Horizons 2020",
+            range: [0, 0],
+            text: ''
+        },
         s1: {
             title: 'ID d’Usuari',
             range: [1, 1],
@@ -514,7 +563,8 @@ const fcrbQuestions = {
     message: "Skipping questions due to answer provided on Q30",
     sectionTranslation: "Secció",
     next: "Següent",
-    pervious: "Previ"
+    pervious: "Previ",
+    consent: 'Consenteixo'
 }
 
 export default fcrbQuestions;
