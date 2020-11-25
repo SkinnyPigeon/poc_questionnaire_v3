@@ -132,10 +132,10 @@ const zmcProfessionalQuestions = {
             values: ["Zeer onveilig", "Zeer veilig"]
         },
         q16: {
-            question: "Hoe sterk gelooft u dat een FlexPass wachtwoord is?",
+            question: "Hoe Helemaal gelooft u dat een FlexPass wachtwoord is?",
             answer: '',
             type: 'checkbox',
-            values: ["Zeer zwak", "Zeer sterk"]
+            values: ["Zeer zwak", "Zeer Helemaal"]
         },
         q17: {
             question: "Over het geheel genomen, hoe moeilijk of gemakkelijk vind je de login-taak in FlexPass?",
@@ -153,13 +153,13 @@ const zmcProfessionalQuestions = {
             question: "Patiënten kunnen eenvoudig inloggen op het FlexPass-wachtwoordsysteem",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q20: {
             question: "Patiënten zullen hun wachtwoord effectief onthouden",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q21: {
             question: "Hoe moeilijk of eenvoudig vindt u de installatie en inschrijving voor de twee-factor authenticatie mobiele applicatie?",
@@ -195,25 +195,25 @@ const zmcProfessionalQuestions = {
             question: "Ik vertrouw op de technologie die het FlexPass-wachtwoordsysteem gebruikt",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q27: {
             question: "Ik vertrouw op het vermogen van het FlexPass wachtwoordsysteem om de privacy van de patiënten te beschermen",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q28: {
             question: "Ik maak me geen zorgen over de veiligheid van het FlexPass-wachtwoordsysteem",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q29: {
             question: "Ik vertrouw op het FlexPass-wachtwoordsysteem om mijn account en gegevens te beschermen tegen cybercriminelen",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q30: {
             question: "Hoe comfortabel of ongemakkelijk zou u zijn met dit systeem voor het beheer van de medische gegevens van de patiënt?",
@@ -231,97 +231,97 @@ const zmcProfessionalQuestions = {
             question: "Beoordeel uw instemming met de volgende verklaring: 'Ik vertrouw erop dat dit systeem op een veilige manier met medische gegevens omgaat.'",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q33: {
             question: "Met behulp van de Serums technologie zou het mogelijk zijn om de medische gegevens van de patiënt te delen en inzichtelijk te maken",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q34: {
             question: "Het gebruik van de Serums technologie zou het vinden en delen van de medische informatie van de patiënt efficiënter maken",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q35: {
             question: "Het gebruik van de Serums technologie zou mijn vermogen vergroten om alle medische dossiers van de patiënt op te halen en te delen",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q36: {
             question: "Ik zou de Serums technologie nuttig vinden ",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q37: {
             question: "Het leren werken met de Serums technologie zou voor mij gemakkelijk zijn",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q38: {
             question: "Ik zou het gemakkelijk vinden om de Serums technologie te laten doen wat ik wil",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q39: {
             question: "Ik zou het gemakkelijk vinden om de Serums technologie te laten doen wat ik wil",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q40: {
             question: "Ik zou de Serums technologie gemakkelijk te gebruiken vinden ",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q41: {
             question: "Ik ben van plan om de Serums technologie te gebruiken wanneer ik toegang moet hebben tot alle medische dossiers van de patiënten",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q42: {
             question: "Ik ben van mening dat de persoonlijke medische informatie van de patiënt alleen toegankelijk is voor degenen die bevoegd zijn om toegang te hebben",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q43: {
             question: "Het is duidelijk welke informatie over de patiënt Serums in het systeem aanwezig is",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q44: {
             question: "Het is duidelijk wie het publiek van de gedeelde informatie van de patiënt is",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q45: {
             question: "Ik denk dat Serums de patiënt in staat stelt om de toegang tot sommige van zijn persoonlijke informatie te beperken tot sommige mensen",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q46: {
             question: "Ik denk dat de patiënt de controle heeft over welke persoonlijke informatie hij of zij kan delen via Serums",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q47: {
             question: "Het is duidelijk welke patiëntinformatie zorgverleners kunnen zien op Serums",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q48: {
             question: "Hoe veilig vindt u het Serums-systeem?",
@@ -333,19 +333,19 @@ const zmcProfessionalQuestions = {
             question: "Ik maak me geen zorgen over de veiligheid van het Serums-systeem",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q50: {
             question: "Ik vertrouw op het vermogen van het Serums-systeem om mijn privacy te beschermen",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q51: {
             question: "Ik vertrouw op de technologie die het Serums-systeem gebruikt",
             answer: '',
             type: 'checkbox',
-            values: ["Sterk oneens", "Sterk mee eens"]
+            values: ["Helemaal oneens", "Helemaal mee eens"]
         }
     },
     sections: {
@@ -421,8 +421,8 @@ const zmcProfessionalQuestions = {
         }
     },
     sectionTranslation: "Sectie",
-    next: "De volgende",
-    previous: "Worige",
+    next: "Volgende",
+    previous: "Vorige",
     consent: "Ik ga akkoord"
 }
 
