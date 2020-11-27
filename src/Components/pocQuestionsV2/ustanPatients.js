@@ -3,11 +3,13 @@ const ustanPatientQuestions = {
         q0: {
             question: `The main purpose of this study is to elicit the end-users opinions, preference and likeability with regards to the Serums Smart Health Centre Systems, a novel technology that aims to provide a more secure and simple access to medical records in a user friendly way.
                 
+                
                     Before taking part in this study please read the information below. When you are finished, click on the 'I consent' option at the bottom of this page if you understand the statements and freely consent to participate in this study.
 
                     The user study will take about 45-75 minutes. Your answers will be treated confidentially and anonymously.
 
                     Participation in the study is voluntary and can be cancelled at any time. You can terminate your participation at any time. In doing so, you also object to the use of your data collected up to that point.
+
 
                     The data collected as part of this study and described above will be treated confidentially. Furthermore, the results of the study will be published in anonymous form, i.e., without your data being personally identifiable.
 
@@ -17,10 +19,15 @@ const ustanPatientQuestions = {
                     Thank you for taking your time to support this project!
 
                     Consent
+
                     By clicking the 'I consent' button you declare that you
+
                     1) understand the purpose of the study,
+
                     2) are over 18 years old,
+
                     3) voluntarily participate in this study, and
+
                     4) have taken note and understand the study information presented above
                 `,
             answer: 1,

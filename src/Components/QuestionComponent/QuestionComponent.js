@@ -53,7 +53,7 @@ export default class QuestionComponent extends Component {
                         sectionTranslation = ustanPatientQuestions['sectionTranslation'];
                         consent = ustanPatientQuestions['consent']
                         break;
-                    case 'PROFESSIONAL':
+                    case 'MEDICAL_STAFF':
                         questions = ustanProfessionalQuestions['questions'];
                         sections = ustanProfessionalQuestions['sections'];
                         sectionTranslation = ustanProfessionalQuestions['sectionTranslation'];
@@ -71,7 +71,7 @@ export default class QuestionComponent extends Component {
                         sectionTranslation = zmcPatientQuestions['sectionTranslation'];
                         consent = zmcPatientQuestions['consent']
                         break;
-                    case 'PROFESSIONAL':
+                    case 'MEDICAL_STAFF':
                         questions = zmcProfessionalQuestions['questions'];
                         sections = zmcProfessionalQuestions['sections'];
                         sectionTranslation = zmcProfessionalQuestions['sectionTranslation'];
@@ -316,7 +316,7 @@ export default class QuestionComponent extends Component {
             <h5 className={styles.title}>{this.state.sections[this.state.section].title}</h5>
             <h5 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h5>
             <div className={styles.line}></div>
-            <div className={styles.question}>{this.state.questions[this.state.question].question}</div>
+            <div className={styles.question} style={{fontSize: "0.85em", whiteSpace: "pre-line"}}>{this.state.questions[this.state.question].question}</div>
             <ConsentButton handleNext={this.handleNext} consent={this.state.consent}/>
         </div>  : consent = false;    
         consent ? display = consent : display = display

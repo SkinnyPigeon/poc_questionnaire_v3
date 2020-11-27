@@ -3,6 +3,7 @@ const fcrbQuestions = {
         q0: {
             question: `El principal propòsit d'aquest estudi és el de cercar l'opinió dels usuaris finals i preferències pel que fa al Sistema Intel·ligent de Salut Central de Serums, una tecnologia que pretén proveir als pacients d'un accés simple i segur als seus historials mèdics d'una manera còmoda per a l'usuari.
 
+
                     Abans de prendre part en l'estudi si us plau llegeixi la informació que hi ha a continuació. Quan hagi acabat premi el botó amb el text "Consenteixo" a la part baixa d'aquest document si entén les afirmacions i consenteix lliurement ser partícep aquest estudi.
 
                     L'estudi d'usuari durarà entre 45-75 minuts. Les seves respostes seran tractades amb confidencialitat i de manera anònima.
@@ -11,16 +12,22 @@ const fcrbQuestions = {
 
                     Les dades recollides durant l'estudi seran tractades de manera confidencial. A demès, el resultat de l'estudi serà publicat de manera anònima, i.e., sense que les seves dades siguin identificables.
 
+
                     Participar en aquest estudi no comporta riscos especials més enllà dels que hi ha a la vida diària
                     Per a possibles futures preguntes sobre l'estudi, el projecte o sobre les maneres en què la seva contribució serà usada si us plau contacti amb nosaltres.
                    
                     Gràcies per dedicar el seu temps a donar suport a aquest projecte!
 
                     Consentiment
+
                     Prement el botó "Consenteixo" vostè declara que:
+
                     1) entén el propòsit de l'estudi,
+
                     2) té una edat de 18 anys o més,
+
                     3) participa voluntàriament en aquest estudi,
+
                     4) ha pres nota i entén la informació de l'estudi presentada en el document
                 `,
             answer: 1,

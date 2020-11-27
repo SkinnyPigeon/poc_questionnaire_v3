@@ -3,11 +3,13 @@ const zmcProfessionalQuestions = {
         q0: {
             question: `Het belangrijkste doel van deze studie is om de mening, voorkeur en sympathie van de eindgebruikers te evalueren met betrekking tot het Serums Smart Health Centre Systems, een nieuwe technologie die gericht is op een veilige en gebruiksvriendelijke toegang tot uw medische dossiers.
 
+
                     Voordat u aan deze studie deelneemt, dient u de onderstaande informatie te lezen. Als u klaar bent en de verklaringen begrijpt en instemt met deelname aan dit onderzoek , klikt u op de optie "Ik ga akkoord" onderaan deze pagina.
 
                     Het gebruikersonderzoek duurt ongeveer 45-75 minuten. Uw antwoorden worden vertrouwelijk en anoniem behandeld. 
 
                     Deelname aan het onderzoek is vrijwillig en kan te allen tijde worden geannuleerd. U kunt uw deelname dus te allen tijde beëindigen. Daarbij maakt u ook bezwaar tegen het gebruik van uw tot dan toe verzamelde gegevens.
+
 
                     De gegevens die in het kader van dit onderzoek worden verzameld en hierboven beschreven, worden vertrouwelijk behandeld. Bovendien worden de resultaten van het onderzoek in anonieme vorm gepubliceerd, d.w.z. zonder dat uw gegevens persoonlijk identificeerbaar zijn.
                     Er zijn geen risico's voor personen die deelnemen aan dit onderzoek buiten de risico's die in het dagelijks leven bestaan.
@@ -17,10 +19,15 @@ const zmcProfessionalQuestions = {
                     Bedankt dat u de tijd heeft genomen om dit project te steunen!
 
                     Toestemming
+
                     Door op de knop "Ik ga akkoord" te klikken verklaart u dat u
+
                     1) het doel van het onderzoek begrijpt,
+
                     2) meer dan 18 jaar oud bent,
+
                     3) vrijwillig deelneemt aan dit onderzoek, en
+
                     4) kennis heeft genomen van de hierboven gepresenteerde onderzoeksinformatie en deze begrijpt.
                 `,
             answer: 1,
