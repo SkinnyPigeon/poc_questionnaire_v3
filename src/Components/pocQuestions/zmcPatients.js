@@ -544,7 +544,8 @@ const zmcPatientQuestions = {
     sectionTranslation: "Sectie",
     next: "Volgende",
     previous: "Vorige",
-    consent: "Ik ga akkoord"
+    consent: "Ik ga akkoord",
+    submit: "Verzenden"
 }
 
 export default zmcPatientQuestions;

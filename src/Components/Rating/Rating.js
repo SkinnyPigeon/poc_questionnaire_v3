@@ -84,10 +84,9 @@ export default class Rating extends Component {
         switch (this.props.rating) {
             case 'input':
                 type = <div>
-                    <input type="number"
+                    <input type="text"
                         onChange={this.props.handleInput}
                         value={this.props.answer} 
-                        max={999}
                     />
                     <div className={styles.inputValue}>
                         {this.props.values[0]}

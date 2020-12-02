@@ -20,7 +20,10 @@ export default class QuestionComponent extends Component {
         section: 's0',
         skip: false,
         sectionTranslation: '',
-        start: false
+        start: false,
+        previous: '',
+        next: '',
+        submit: ''
     }
 
     componentDidMount() {
@@ -35,15 +38,18 @@ export default class QuestionComponent extends Component {
         let question = 'q0';
         let start = true;
         let consent = '';
+        let previous = '';
+        let next = '';
+        let submit = '';
         switch(this.props.hospital) {
             case 'FCRB':
                 questions = fcrbQuestions['questions'];
                 sections = fcrbQuestions['sections'];
                 sectionTranslation = fcrbQuestions['sectionTranslation'];
-                consent = fcrbQuestions['consent']
-                // section = 's1';
-                // question = 'q1';
-                // start = false;
+                consent = fcrbQuestions['consent'];
+                previous = fcrbQuestions['previous'];
+                next = fcrbQuestions['next'];
+                submit = fcrbQuestions['submit'];
                 break;
             case 'USTAN':
                 switch(this.props.type) {
@@ -52,12 +58,18 @@ export default class QuestionComponent extends Component {
                         sections = ustanPatientQuestions['sections'];
                         sectionTranslation = ustanPatientQuestions['sectionTranslation'];
                         consent = ustanPatientQuestions['consent']
+                        previous = ustanPatientQuestions['previous'];
+                        next = ustanPatientQuestions['next'];
+                        submit = ustanPatientQuestions['submit'];
                         break;
                     case 'MEDICAL_STAFF':
                         questions = ustanProfessionalQuestions['questions'];
                         sections = ustanProfessionalQuestions['sections'];
                         sectionTranslation = ustanProfessionalQuestions['sectionTranslation'];
                         consent = ustanProfessionalQuestions['consent']
+                        previous = ustanProfessionalQuestions['previous'];
+                        next = ustanProfessionalQuestions['next'];
+                        submit = ustanProfessionalQuestions['submit'];
                         break;
                     default:
                         break;
@@ -70,12 +82,18 @@ export default class QuestionComponent extends Component {
                         sections = zmcPatientQuestions['sections'];
                         sectionTranslation = zmcPatientQuestions['sectionTranslation'];
                         consent = zmcPatientQuestions['consent']
+                        previous = zmcPatientQuestions['previous'];
+                        next = zmcPatientQuestions['next'];
+                        submit = zmcPatientQuestions['submit'];
                         break;
                     case 'MEDICAL_STAFF':
                         questions = zmcProfessionalQuestions['questions'];
                         sections = zmcProfessionalQuestions['sections'];
                         sectionTranslation = zmcProfessionalQuestions['sectionTranslation'];
                         consent = zmcProfessionalQuestions['consent']
+                        previous = zmcProfessionalQuestions['previous'];
+                        next = zmcProfessionalQuestions['next'];
+                        submit = zmcProfessionalQuestions['submit'];
                         break;
                     default:
                         break;
@@ -92,7 +110,10 @@ export default class QuestionComponent extends Component {
             start: start,
             section: section,
             question: question,
-            consent: consent
+            consent: consent,
+            previous: previous,
+            next: next,
+            submit: submit
         })
     }
 
@@ -281,10 +302,10 @@ export default class QuestionComponent extends Component {
             disabled = true;
         }
         this.state.questions ? display = <div className={styles.wrapper}>
-            <h5 className={styles.title}>{this.state.sections[this.state.section].title}</h5>
-            <h5 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h5>
+            <h2 className={styles.title}>{this.state.sections[this.state.section].title}</h2>
+            <h4 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h4>
             <div className={styles.line}></div>
-            <div className={styles.question}>{this.state.questions[this.state.question].question}</div>
+            <div className={styles.question} style={{fontSize: "1.5em"}}>{this.state.questions[this.state.question].question}</div>
             <Rating 
                 question={this.state.question} 
                 rating={this.state.questions[this.state.question].type} 
@@ -299,6 +320,8 @@ export default class QuestionComponent extends Component {
                 handleNext={this.handleNext} 
                 handlePrevious={this.handlePrevious} 
                 disabled={disabled}
+                previous={this.state.previous}
+                next={this.state.next}
             />
             <ProgressTracker 
                 max={String(sectionCount)} 
@@ -310,13 +333,14 @@ export default class QuestionComponent extends Component {
                 caseStudy={this.props.caseStudy} 
                 disabled={disabledSubmit}
                 display={disabledSubmit}
+                submit={this.state.submit}
             />
         </div> : display = '';   
         this.state.start ? consent = <div className={styles.wrapper}>
-            <h5 className={styles.title}>{this.state.sections[this.state.section].title}</h5>
-            <h5 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h5>
+            <h2 className={styles.title}>{this.state.sections[this.state.section].title}</h2>
+            <h4 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h4>
             <div className={styles.line}></div>
-            <div className={styles.question} style={{fontSize: "0.85em", whiteSpace: "pre-line"}}>{this.state.questions[this.state.question].question}</div>
+            <div className={styles.question} style={{fontSize: "1.5em", whiteSpace: "pre-line"}}>{this.state.questions[this.state.question].question}</div>
             <ConsentButton handleNext={this.handleNext} consent={this.state.consent}/>
         </div>  : consent = false;    
         consent ? display = consent : display = display

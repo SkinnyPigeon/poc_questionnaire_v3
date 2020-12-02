@@ -550,7 +550,8 @@ const ustanPatientQuestions = {
     sectionTranslation: "Section",
     next: "Next",
     previous: "Previous",
-    consent: "I consent"
+    consent: "I consent",
+    submit: "Submit"
 }
 
 export default ustanPatientQuestions;

@@ -54,7 +54,7 @@ export default class Submit extends Component {
                     onClick={this.handleSubmission} 
                     onKeyDown={this.handleKeyDown} disabled={this.props.disabled}
                 >
-                    Submit
+                    {this.props.submit}
                 </button>
             </div>
         )

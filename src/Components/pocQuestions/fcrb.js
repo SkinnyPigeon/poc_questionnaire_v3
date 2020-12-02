@@ -545,8 +545,9 @@ const fcrbQuestions = {
     message: "Skipping questions due to answer provided on Q30",
     sectionTranslation: "Secció",
     next: "Següent",
-    pervious: "Previ",
-    consent: 'Consenteixo'
+    previous: "Previ",
+    consent: 'Consenteixo',
+    submit: 'Presentar'
 }
 
 export default fcrbQuestions;

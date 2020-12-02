@@ -7,12 +7,12 @@ export default class Navigation extends Component {
             <div className={styles.wrapper}>
                 <button 
                     className={styles.button} 
-                    onClick={this.props.handlePrevious} >Previous
+                    onClick={this.props.handlePrevious} >{this.props.previous}
                 </button>
                 <button 
                     className={styles.button} 
                     disabled={this.props.disabled}
-                    onClick={this.props.handleNext} >Next
+                    onClick={this.props.handleNext} >{this.props.next}
                 </button>
             </div>
         )
