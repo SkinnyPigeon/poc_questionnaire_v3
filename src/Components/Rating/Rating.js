@@ -40,7 +40,7 @@ export default class Rating extends Component {
     makeCheckBoxes = () => {
         let checkboxes = <ul className={styles.checkBoxList}>
             <div className={styles.maxMin}>
-                <h5>{this.props.values[0]}</h5>
+                <h4>{this.props.values[0]}</h4>
             </div>
             <div className={styles.checkboxes}>
                 <label>
@@ -65,7 +65,7 @@ export default class Rating extends Component {
                 </label>
             </div>
             <div className={styles.maxMin}>
-                <h5>{this.props.values[1]}</h5>
+                <h4>{this.props.values[1]}</h4>
             </div>
         </ul>
         return checkboxes;
@@ -87,6 +87,7 @@ export default class Rating extends Component {
                     <input type="text"
                         onChange={this.props.handleInput}
                         value={this.props.answer} 
+                        style={{fontSize: "1.4em"}}
                     />
                     <div className={styles.inputValue}>
                         {this.props.values[0]}
@@ -98,14 +99,16 @@ export default class Rating extends Component {
                 let options = this.fillSelectOptions(this.props.values);
                 type = <select
                     onChange={this.props.handleInput}
-                    value={this.props.answer}>
+                    value={this.props.answer}
+                    style={{fontSize: "1.4em"}}>
                     {options}
                 </select>
                 break;
             case 'textarea':
                 type = <textarea className={styles.textArea}
                     onChange={this.props.handleInput}
-                    value={this.props.answer}>
+                    value={this.props.answer}
+                    style={{fontSize: "1.4em"}}>
                 </textarea>
                 break;
             case 'checkbox':

@@ -51,8 +51,11 @@ export default class Submit extends Component {
             <div className={className}>
                 <button 
                     id="submitButton" 
+                    className={styles.button}
                     onClick={this.handleSubmission} 
-                    onKeyDown={this.handleKeyDown} disabled={this.props.disabled}
+                    onKeyDown={this.handleKeyDown} 
+                    disabled={this.props.disabled}
+                    style={{fontSize: "1.4em"}}
                 >
                     {this.props.submit}
                 </button>

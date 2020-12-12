@@ -7,7 +7,8 @@ export default class ConsentButton extends Component {
             <div className={styles.wrapper}>
                 <button
                     className={styles.button}
-                    onClick={this.props.handleNext}>{this.props.consent}
+                    onClick={this.props.handleNext}
+                    style={{fontSize: "1.4em"}}>{this.props.consent}
                 </button>
             </div>
         )

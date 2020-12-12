@@ -39,7 +39,7 @@ const zmcPatientQuestions = {
             values: ["Maak hier uw keuze", "18-25", "26-35", "36-45", "46-55", "56-65", "66 en hoger"]
         },
         q3: {
-            question: "Wat is je hoogste opleidingsniveau?",
+            question: "Wat is uw hoogste opleidingsniveau?",
             answer: 0,
             type: 'select',
             values: ["Maak hier uw keuze", "Ph.D. opleiding", "Master opleiding", "Bachelor opleiding", "Middelbare opleiding", "Basis school"]
@@ -51,7 +51,7 @@ const zmcPatientQuestions = {
             values: ["Beginner", "Gevorderd"]
         },
         q5: {
-            question: "Té accés regular a un ordinador?",
+            question: "Heeft u op dit moment regelmatig toegang tot een computer?",
             answer: 0,
             type: 'select',
             values: ["Maak hier uw keuze", "Ja", "Nee"]
@@ -63,13 +63,13 @@ const zmcPatientQuestions = {
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q7: {
-            question: "Ik vond het FlexPass systeem onnodig complex",
+            question: "Ik vind het FlexPass systeem onnodig complex",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q8: {
-            question: "Ik dacht dat het FlexPass systeem gemakkelijk te gebruiken was",
+            question: "Ik vind dat het FlexPass systeem gemakkelijk te gebruiken is",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
@@ -81,31 +81,31 @@ const zmcPatientQuestions = {
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q10: {
-            question: "Ik vond dat de verschillende functies in het FlexPass systeem goed geïntegreerd waren",
+            question: "Ik vind dat de verschillende functies in het FlexPass systeem goed geïntegreerd zijn",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q11: {
-            question: "Ik dacht dat er te veel inconsistentie waren in het FlexPass systeem",
+            question: "Ik vind dat er te veel tegenstrijdigheden zijn in het FlexPass systeem",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q12: {
-            question: "Ik kan me voorstellen dat de meeste mensen het FlexPass-systeem heel snel zouden leren gebruiken",
+            question: "Ik kan me voorstellen dat de meeste mensen heel snel kunnen leren om het FlexPass-systeem te gebruiken",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q13: {
-            question: "Ik vond het FlexPass systeem erg omslachtig in het gebruik",
+            question: "Ik vind het FlexPass systeem erg omslachtig in het gebruik",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q14: {
-            question: "Ik had veel vertrouwen in het gebruik van het FlexPass-systeem",
+            question: "Ik heb veel vertrouwen in het gebruik van het FlexPass-systeem",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
@@ -117,49 +117,49 @@ const zmcPatientQuestions = {
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q16: {
-            question: "Over het geheel genomen, hoe moeilijk of gemakkelijk vond je de taak om een wachtwoord te creëren in FlexPass",
+            question: "Vindt u het in het algemeen moeilijk of gemakkelijk om een wachtwoord aan te maken in het Flexpass systeem?",
             answer: '',
             type: 'checkbox',
-            values: ["Zeer moeilijk", "Zeer eenvoudig"]
+            values: ["Zeer moeilijk", "Zeer gemakkelijk"]
         },
         q17: {
-            question: "Hoe langzaam of hoe snel vond u de taak om een wachtwoord aan te maken in FlexPass?",
+            question: "Hoe langzaam of hoe snel vind u het proces om een wachtwoord aan te maken in het FlexPass systeem?",
             answer: '',
             type: 'checkbox',
             values: ["Langzaam", "Snel"]
         },
         q18: {
-            question: "Hoe lang (in seconden) moest u uw wachtwoord in FlexPass aanmaken?",
+            question: "Hoeveel seconden had u ongeveer nodig om uw wachtwoord in het FlexPass systeem aan te maken?",
             answer: '',
             type: 'input',
             values: ["Seconden"]
         },
         q19: {
-            question: "Hoe veilig vindt u het FlexPass-wachtwoordsysteem?",
+            question: "Hoe veilig vindt u het FlexPass systeem?",
             answer: '',
             type: 'checkbox',
             values: ["Zeer onveilig", "Zeer veilig"]
         },
         q20: {
-            question: "Hoe Helemaal gelooft u dat uw FlexPass-wachtwoord is?",
+            question: "Hoe sterk denkt u dat uw wachtwoord in het FlexPass systeem is?",
             answer: '',
             type: 'checkbox',
-            values: ["Zeer zwak", "Zeer Helemaal"]
+            values: ["Zeer zwak", "Zeer sterk"]
         },
         q21: {
-            question: "Heeft het beelddecor invloed gehad op uw wachtwoordselecties (b.v. heeft u een bepaald verhaal gecreëerd bij het selecteren van punten op de afbeelding, heeft u eerdere ervaringen in aanmerking genomen als onderdeel van uw selecties)? Zo ja, kunt u hieronder uitleggen hoe de afbeelding de wachtwoordselecties heeft beïnvloed (optioneel)",
+            question: "Heeft de setting van de afbeeldingen invloed gehad op uw wachtwoordselecties (b.v. heeft u een bepaald verhaal gecreëerd bij het selecteren van punten op de afbeelding, heeft u eerdere ervaringen in aanmerking genomen als onderdeel van uw selecties)? Zo ja, kunt u hieronder uitleggen hoe de afbeelding de wachtwoordselecties heeft beïnvloed (optioneel)",
             answer: '',
             type: 'textarea',
             optional: true
         },
         q22: {
-            question: "Hoe heb je besloten waar je de gebaren op het beeld tekent? (optioneel)",
+            question: "Hoe heeft u besloten waar u de figuren (tik, lijn of cirkel) op de afbeelding ging tekenen? (optioneel)",
             answer: '',
             type: 'textarea',
             optional: true
         },
         q23: {
-            question: "Hoe heb je besloten welk gebaar (tik, lijn of cirkel) je moet maken? (optioneel)",
+            question: "Hoe heeft u besloten welke figuren (tik, lijn of cirkel) u ging gebruiken? (optioneel)",
             answer: '',
             type: 'textarea',
             optional: true
@@ -177,25 +177,25 @@ const zmcPatientQuestions = {
             optional: true
         },
         q26: {
-            question: "Over het geheel genomen, hoe moeilijk of gemakkelijk vond je de login-taak in FlexPass?",
+            question: "Over het geheel genomen, hoe moeilijk of gemakkelijk vind u het inloggen in het FlexPass systeem?",
             answer: '',
             type: 'checkbox',
             values: ["Zeer moeilijk", "Zeer gemakkelijk"]
         },
         q27: {
-            question: "Hoe veeleisend was de login-taak mentaal?",
+            question: "Hoe belastend was het inloggen mentaal?",
             answer: '',
             type: 'checkbox',
             values: ["Zeer laag", "Zeer hoog"]
         },
         q28: {
-            question: "Ik kon gemakkelijk inloggen op het FlexPass wachtwoordsysteem",
+            question: "Ik kon gemakkelijk inloggen op het FlexPass systeem",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q29: {
-            question: "Ik heb mijn wachtwoord effectief onthouden",
+            question: "Ik heb mijn wachtwoord goed kunnen onthouden",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
@@ -228,7 +228,7 @@ const zmcPatientQuestions = {
             values: ["Zeer moeilijk", "Zeer moeilijk"]
         },
         q34: {
-            question: "In het algemeen, hoe moeilijk of gemakkelijk vond u de twee-factor authenticatie goedkeuringstaak (push notification of geheime code)?",
+            question: "In het algemeen, hoe moeilijk of gemakkelijk vond u de twee-factor authenticatie goedkeuringstaak (push-bericht of geheime code)?",
             answer: '',
             type: 'checkbox',
             values: ["Zeer moeilijk", "Zeer gemakkelijk"]
@@ -255,67 +255,67 @@ const zmcPatientQuestions = {
             trigger: 2
         },
         q38: {
-            question: "Hoe moeilijk of gemakkelijk heeft u het wachtwoord reset proces van het FlexPass systeem gevonden?",
+            question: "Hoe moeilijk of gemakkelijk vindt u het resetten van uw wachtwoord in het FlexPass systeem?",
             answer: '',
             type: 'checkbox',
             values: ["Zeer moeilijk", "Zeer eenvoudig"]
         },
         q39: {
-            question: "Hoe veilig heeft u het wachtwoord reset proces van het FlexPass systeem gevonden?",
+            question: "Hoe veilig vindt u het wachtwoord reset proces van het FlexPass systeem?",
             answer: '',
             type: 'checkbox',
             values: ["Zeer onveilig", "Zeer veilig"]
         },
         q40: {
-            question: "Ik vertrouw op de technologie die het FlexPass-wachtwoordsysteem gebruikt",
+            question: "Ik vertrouw op de technologie die het FlexPass systeem gebruikt",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q41: {
-            question: "Ik vertrouw op het vermogen van het FlexPass wachtwoordsysteem om mijn privacy te beschermen",
+            question: "Ik vertrouw erop dat het FlexPass systeem mijn privacy beschermt",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q42: {
-            question: "Ik maak me geen zorgen over de veiligheid van het FlexPass-wachtwoordsysteem",
+            question: "Ik maak me geen zorgen over de veiligheid van het FlexPass systeem",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q43: {
-            question: "Ik vertrouw op het FlexPass-wachtwoordsysteem om mijn account en gegevens te beschermen tegen cybercriminelen",
+            question: "Ik vertrouw erop dat het FlexPass systeem mijn account en mijn gegevens beschermt tegen cybercriminelen",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q44: {
-            question: "Vindt u het een goed idee om beeldwachtwoorden te creëren met gepersonaliseerde beelden die zijn afgestemd op de eerdere activiteiten en ervaringen van de gebruikers in het dagelijks leven?",
+            question: "Vindt u het een goed idee om afbeeldingswachtwoorden te creëren met gepersonaliseerde beelden die zijn afgestemd op de eerdere activiteiten en ervaringen van de gebruikers in het dagelijks leven?",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal niet", "Helemaal"]
         },
         q45: {
-            question: "Vindt u het een goed idee om gebruikers flexibel hun favoriete authenticatiemethode (foto of tekstpaswoord) te laten kiezen?",
+            question: "Vindt u het een goed idee om gebruikers flexibel hun favoriete authenticatiemethode (afbeelding of teksteel wachtwoord) te laten kiezen?",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal niet", "Helemaal"]
         },
         q46: {
-            question: "Wat zijn de positieve aspecten van het FlexPass-wachtwoordsysteem? (optioneel)",
+            question: "Wat zijn de positieve aspecten van het FlexPass systeem? (optioneel)",
             answer: '',
             type: 'textarea',
             optional: true
         },
         q47: {
-            question: "Wat zijn de negatieve aspecten die je niet leuk vindt in het FlexPass wachtwoordsysteem? (optioneel)",
+            question: "Wat zijn de negatieve aspecten van het FlexPass systeem? (optioneel)",
             answer: '',
             type: 'textarea',
             optional: true
         },
         q48: {
-            question: "Ik zou bereid zijn om het FlexPass wachtwoordsysteem te gebruiken als alternatief gebruikersverificatiesysteem om in te loggen op mijn gebruikersaccount",
+            question: "Ik zou bereid zijn om het FlexPass systeem te gebruiken als alternatief om in te loggen op mijn accounts",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
@@ -326,73 +326,73 @@ const zmcPatientQuestions = {
             type: 'textarea'
         },
         q50: {
-            question: "Hoe comfortabel of ongemakkelijk zou u zijn met dit systeem voor het beheer van uw medische gegevens?",
+            question: "Hoe comfortabel zou u zijn met het Serums systeem voor het beheer van uw medische gegevens?",
             answer: '',
             type: 'checkbox',
             values: ["Zeer ongemakkelijk", "Zeer comfortabel"]
         },
         q51: {
-            question: "Hoe geschikt of onbekwaam acht u dit systeem voor de veilige omgang met medische gegevens?",
+            question: "Hoe handig denkt u dat het Serums systeem is voor de veilige omgaan met medische gegevens?",
             answer: '',
             type: 'checkbox',
-            values: ["Zeer onbekwaam", "Zeer bekwaam"]
+            values: ["Erg onhandig", "Erg handig"]
         },
         q52: {
-            question: "Beoordeel uw instemming met de volgende verklaring: 'Ik vertrouw erop dat dit systeem mijn medische gegevens op een veilige manier verwerkt'",
+            question: "Geef aan of u het eens bent met deze verklaring: 'Ik vertrouw erop dat het Serums systeem mijn medische gegevens op een veilige manier verwerkt'",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q53: {
-            question: "Het gebruik van de Serums technologie zou het mogelijk maken om mijn medische gegevens te delen en inzichtelijk te maken",
+            question: "Het gebruik van het Serums systeem zou het mogelijk maken om mijn medische gegevens te delen en inzichtelijk te maken",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q54: {
-            question: "Het gebruik van de Serums technologie zou het vinden en delen van mijn medische informatie efficiënter maken",
+            question: "Het gebruik van het Serums systeem zou het vinden en delen van mijn medische informatie efficiënter maken",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q55: {
-            question: "Het gebruik van de Serums technologie zou mijn vermogen vergroten om mijn medische dossiers op te halen en te delen",
+            question: "Het gebruik van het Serums systeem zou mijn vermogen vergroten om mijn medische dossiers op te halen en te delen",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q56: {
-            question: "Ik zou de Serums technologie nuttig vinden ",
+            question: "Ik zou het Serums systeem nuttig vinden",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q57: {
-            question: "Het leren werken met de Serums technologie zou voor mij gemakkelijk zijn",
+            question: "Het leren werken met het Serums systeem zou voor mij gemakkelijk zijn",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q58: {
-            question: "Ik zou het gemakkelijk vinden om de Serums technologie te laten doen wat ik wil",
+            question: "Ik zou het gemakkelijk vinden om het Serums systeem te laten doen wat ik wil",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q59: {
-            question: "Het zou voor mij gemakkelijk zijn om vaardig te worden in het gebruik van de Serums technologie",
+            question: "Het zou voor mij gemakkelijk zijn om vaardig te worden in het gebruik van het Serums systeem",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q60: {
-            question: "Ik zou de Serums technologie gemakkelijk te gebruiken vinden",
+            question: "Ik zou het Serums systeem gemakkelijk te gebruiken vinden",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q61: {
-            question: "Ik ben van plan om de Serums technologie te gebruiken wanneer ik toegang tot mijn medische dossiers nodig heb",
+            question: "Ik ben van plan om het Serums systeem te gebruiken wanneer ik toegang tot mijn medische dossiers nodig heb",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
@@ -404,7 +404,7 @@ const zmcPatientQuestions = {
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q63: {
-            question: "Het is duidelijk welke informatie over mij Serums in het systeem aanwezig is",
+            question: "Het is duidelijk welke informatie over mij in het Serums systeem aanwezig is",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
@@ -416,7 +416,7 @@ const zmcPatientQuestions = {
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q65: {
-            question: "Ik denk dat Serums mij in staat stelt om de toegang tot sommige van mijn persoonlijke gegevens te beperken tot sommige mensen",
+            question: "Ik denk dat het Serums systeem mij in staat stelt om de toegang tot gedeelten van mijn persoonlijke gegevens te beperken tot bepaalde mensen",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
@@ -434,25 +434,25 @@ const zmcPatientQuestions = {
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q68: {
-            question: "Hoe veilig vindt u het Serums-systeem in het algemeen?",
+            question: "Hoe veilig vindt u het Serums systeem in het algemeen?",
             answer: '',
             type: 'checkbox',
             values: ["Zeer onveilig", "Zeer veilig"]
         },
         q69: {
-            question: "Ik maak me geen zorgen over de veiligheid van het Serums-systeem",
+            question: "Ik maak me geen zorgen over de veiligheid van het Serums systeem",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q70: {
-            question: "Ik vertrouw op het vermogen van het Serums-systeem om mijn privacy te beschermen",
+            question: "Ik vertrouw op het vermogen van het Serums systeem om mijn privacy te beschermen",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
         },
         q71: {
-            question: "Ik vertrouw op de technologie die het Serums-systeem gebruikt",
+            question: "Ik vertrouw op de technologie die het Serums systeem gebruikt",
             answer: '',
             type: 'checkbox',
             values: ["Helemaal oneens", "Helemaal mee eens"]
@@ -475,19 +475,19 @@ const zmcPatientQuestions = {
             text: ''
         },
         s3: {
-            title: 'Bruikbaarheid FlexPass Wachtwoord Systeem',
+            title: 'Bruikbaarheid FlexPass Afbeeldingswachtwoord Systeem',
             range: [6, 15],
-            text: 'Beoordeel de bruikbaarheid van het FlexPass Wachtwoord Systeem'
+            text: 'Beoordeel de bruikbaarheid van het FlexPass Afbeeldingswachtwoord Systeem'
         },
         s4: {
             title: 'Wachtwoord aanmaken',
             range: [16, 25],
-            text: 'Beoordeel uw ervaring en perceptie met betrekking tot het FlexPass-systeem voor het aanmaken van wachtwoorden en het proces'
+            text: 'Beoordeel uw ervaring en perceptie met betrekking tot het FlexPass Afbeeldingswachtwoord systeem voor het aanmaken van wachtwoorden en het proces'
         },
         s5: {
             title: 'Inloggen met een wachtwoord',
             range: [26, 29],
-            text: "Beoordeel uw ervaring en perceptie met betrekking tot het FlexPass-loginsysteem"
+            text: "Beoordeel uw ervaring en perceptie met betrekking tot het inloggen in het FlexPass Afbeeldingswachtwoord systeem"
         },
         s6: {
             title: 'Twee-factor Authenticatie Mobiele Applicatie',
@@ -497,17 +497,17 @@ const zmcPatientQuestions = {
         s7: {
             title: 'Wachtwoord resetten',
             range: [37, 39],
-            text: 'Indien u uw wachtwoord heeft gereset, beoordeel dan uw ervaring en perceptie met betrekking tot het FlexPass wachtwoord-resetsysteem en -proces'
+            text: 'Indien u uw wachtwoord heeft gereset, beoordeel dan uw ervaring en perceptie met betrekking tot het FlexPass Afbeeldingswachtwoord Resetsysteem en -proces'
         },
         s8: {
-            title: 'Vertrouw op',
+            title: 'Vertrouwen',
             range: [40, 43],
-            text: 'Beoordeel uw vertrouwen in het FlexPass-wachtwoordsysteem'
+            text: 'Beoordeel uw vertrouwen in het FlexPass Afbeeldingswachtwoord systeem'
         },
         s9: {
             title: 'Wachtwoordervaring en -voorkeur',
             range: [44, 49],
-            text: 'Gelieve uw algemene ervaring, voorkeur en meningen met betrekking tot het FlexPass-wachtwoordsysteem toe te lichten'
+            text: 'Gelieve uw algemene ervaring, voorkeur en meningen met betrekking tot het FlexPass Afbeeldingswachtwoord systeem toe te lichten'
         },
         s10: {
             title: 'Patiëntvertrouwen medische gegevens',
@@ -515,12 +515,12 @@ const zmcPatientQuestions = {
             text: ''
         },
         s11: {
-            title: 'Waargenomen bruikbaarheidsvragen',
+            title: 'Waargenomen bruikbaarheid',
             range: [53, 56],
             text: ''
         },
         s12: {
-            title: 'Waargenomen gebruiksgemak vragen',
+            title: 'Waargenomen gebruiksgemak',
             range: [57, 60],
             text: ''
         },
@@ -535,7 +535,7 @@ const zmcPatientQuestions = {
             text: ''
         },
         s15: {
-            title: 'Waargenomen veiligheid van het Serums-systeem',
+            title: 'Waargenomen veiligheid van het Serums systeem',
             range: [68, 71],
             text: ''
         }

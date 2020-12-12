@@ -33,16 +33,16 @@ const fcrbQuestions = {
             values: [""]
         },
         q2: {
-            question: "En quin rang d’edat es troba vostè (en anys)?",
+            question: "A quina franja d'edat pertany (en anys)?",
             answer: 0,
             type: 'select',
-            values: ["Si us plau seleccioneu", "18-25", "26-35", "36-45", "46-55", "56-65", "66 o més"]
+            values: ["Si us plau seleccioni", "18-25", "26-35", "36-45", "46-55", "56-65", "66 o més"]
         },
         q3: {
-            question: "Quin és el grau més alt de la seva educació oficial?",
+            question: "Quin és el seu nivell d'estudis?",
             answer: 0,
             type: 'select',
-            values: ["Si us plau seleccioneu", "Doctorat", "Estudis de Màster", "Estudis de Grau / Diplomatura", "Estudis de Batxillerat", "Estudis Secundaris"]
+            values: ["Si us plau seleccioni", "Doctorat", "Estudis de Màster", "Estudis de Grau / Diplomatura", "Estudis de Batxillerat", "Estudis Secundaris"]
         },
         q4: {
             question: "Com qualificaria els seus coneixements informàtics?",
@@ -51,10 +51,10 @@ const fcrbQuestions = {
             values: ["Principiant", "Avançat"]
         },
         q5: {
-            question: "Té accés regular a un ordinador?",
+            question: "Pot accedir regularment a un ordinador?",
             answer: 0,
             type: 'select',
-            values: ["Si us plau seleccioneu", "Sí", "No"]
+            values: ["Si us plau seleccioni", "Sí", "No"]
         },
         q6: {
             question: "Crec que m’agradaria fer servir el sistema FlexPass freqüentment",
@@ -83,13 +83,13 @@ const fcrbQuestions = {
             values: ["Molt en desacord", "Molt d’acord"]
         },
         q10: {
-            question: "Trobo que les varies funcionalitats del sistema FlexPass han sigut ben integrades",
+            question: "Trobo que les diferents funcionalitats del sistema FlexPass estàn ben integrades",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
         },
         q11: {
-            question: "He trobat que hi ha massa inconsistència en el sistema FlexPass",
+            question: "He trobat que hi ha massa inconsistències en el sistema FlexPass",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
@@ -107,7 +107,7 @@ const fcrbQuestions = {
             values: ["Molt en desacord", "Molt d’acord"]
         },
         q14: {
-            question: "M’he sentit molt segur en fer servir el sistema FlexPass",
+            question: "M’he sentit molt segur a l'hora fer servir el sistema FlexPass",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
@@ -119,13 +119,13 @@ const fcrbQuestions = {
             values: ["Molt en desacord", "Molt d’acord"]
         },
         q16: {
-            question: "En general com ha sigut de fàcil o difícil la tasca de creació d'una contrasenya amb FlexPass?",
+            question: "En general com ha sigut de fàcil o difícil la tasca de creació de la contrasenya amb FlexPass?",
             answer: '',
             type: 'checkbox',
             values: ["Molt difícil", "Molt fàcil"]
         },
         q17: {
-            question: "En general com de ràpida o lenta li ha semblat la tasca de creació d'una contrasenya amb FlexPass",
+            question: "Com de ràpida o lenta li ha semblat la tasca de creació de la contrasenya amb FlexPass",
             answer: '',
             type: 'checkbox',
             values: ["Lent", "Ràpid"]
@@ -203,10 +203,10 @@ const fcrbQuestions = {
             values: ["Molt en desacord", "Molt d’acord"]
         },
         q30: {
-            question: "Ha pogut instal·lar i inscriure’t a l’aplicació d’autenticació de dos factors amb èxit?",
+            question: "Ha pogut instal·lar i inscriure’s a l’aplicació d’autenticació de dos factors amb èxit?",
             answer: 0,
             type: 'select',
-            values: ["Si us plau seleccioneu", "Sí", "No"],
+            values: ["Si us plau seleccioni", "Sí", "No"],
             dependencies: true,
             linked: ['q31', 'q32', 'q33', 'q34', 'q35', 'q36'],
             trigger: 2
@@ -215,16 +215,16 @@ const fcrbQuestions = {
             question: "Si la seva resposta ha sigut «Sí», quin mètode d’autenticació de dos factors ha fet servir per a accedir?",
             answer: 0,
             type: 'select',
-            values: ["Si us plau seleccioneu", "Missatge de notificació push", "Codi secret (Contrasenya temporal d’un sol us - TOTP)"]
+            values: ["Si us plau seleccioni", "Missatge de notificació push", "Codi secret (Contrasenya temporal d’un sol us - TOTP)"]
         },
         q32: {
             question: "Ha pogut accedir de manera exitosa al sistema després de fer servir l’autenticació de dos factors?",
             answer: 0,
             type: 'select',
-            values: ["Si us plau seleccioneu", "Sí", "No"]
+            values: ["Si us plau seleccioni", "Sí", "No"]
         },
         q33: {
-            question: "En general com de difícil o fàcil ha sigut la instal·lació i inscripció a la aplicació mòbil d’autenticació de dos factors?",
+            question: "En general com de fàcil o difícil  ha sigut la instal·lació i inscripció a la aplicació mòbil d’autenticació de dos factors?",
             answer: '',
             type: 'checkbox',
             values: ["Molt difícil", "Molt fàcil"]
@@ -251,7 +251,7 @@ const fcrbQuestions = {
             question: "Heu requerit restablir la contrasenya?",
             answer: '',
             type: 'select',
-            values: ["Si us plau seleccioneu", "Sí", "No"],
+            values: ["Si us plau seleccioni", "Sí", "No"],
             dependencies: true,
             linked: ['q38', 'q39'],
             trigger: 2
@@ -305,19 +305,19 @@ const fcrbQuestions = {
             values: ["Gèns", "Extremadament"]
         },
         q46: {
-            question: "Quins son els aspectes positius que li agraden del sistema de contrasenya FlexPass?(opcional)?",
+            question: "Quins són els aspectes positius que li agraden del sistema de contrasenya FlexPass?(opcional)?",
             answer: '',
             type: 'textarea',
             optional: true
         },
         q47: {
-            question: "Quins son els aspectes negatius que no li han agradat del sistema de contrasenya FlexPass? (opcional)",
+            question: "Quins són els aspectes negatius que no li han agradat del sistema de contrasenya FlexPass? (opcional)",
             answer: '',
             type: 'textarea',
             optional: true
         },
         q48: {
-            question: "Estaria disposat a fer servir el sistema FlexPass com a sistema alternatiu d’autenticació d’usuari per a accedir a la meva compta d’usuari",
+            question: "Estaria disposat a fer servir el sistema FlexPass com a sistema alternatiu d’autenticació d’usuari per a accedir al seu compte d'usuari",
             answer: '',
             type: 'checkbox',
             values: ["Molt en desacord", "Molt d’acord"]
@@ -328,7 +328,7 @@ const fcrbQuestions = {
             type: 'textarea'
         },
         q50: {
-            question: "Com de còmode o incòmode estaria si aquest sistema gestionés les seves dades mèdiques?",
+            question: "Com de còmode o incòmode estaria si hagués de fer servir aquest sistema per a controlar les seves dades mèdiques?",
             answer: '',
             type: 'checkbox',
             values: ["Molt incomode", "Molt còmode"]
@@ -484,7 +484,7 @@ const fcrbQuestions = {
         s4: {
             title: 'Creació de la Contrasenya',
             range: [16, 25],
-            text: 'Siusplau, qualifiqui la seva experiència i percepció pel que fa al sistema i procés de creació de la contrasenya FlexPass'
+            text: 'Si us plau, qualifiqui la seva experiència i percepció pel que fa al sistema i procés de creació de la contrasenya FlexPass'
         },
         s5: {
             title: 'Accés amb Contrasenya',
@@ -504,12 +504,12 @@ const fcrbQuestions = {
         s8: {
             title: 'Confiança',
             range: [40, 43],
-            text: 'Siusplau qualifiqui la seva confiança en systema de contrasenya FlexPass'
+            text: 'Si us plau qualifiqui la seva confiança en systema de contrasenya FlexPass'
         },
         s9: {
             title: 'Experiència i Preferència de la Contrasenya',
             range: [44, 49],
-            text: 'Siusplau, expliqui la seva experiència, preferències i opinions sobre el sistema de contrasenya FlexPass'
+            text: 'Si us plau, expliqui la seva experiència, preferències i opinions sobre el sistema de contrasenya FlexPass'
         },
         s10: {
             title: 'Confiança del Pacient sobre Dades Mèdiques',

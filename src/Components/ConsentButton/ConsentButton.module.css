@@ -7,8 +7,9 @@
 }
 
 .button {
-    width: 10%;
-    height: 30px;
+    width: 20%;
+    height: 40px;
     margin: 10px 2px;
     font-weight: 700;
+    border-radius: 5px;
 }

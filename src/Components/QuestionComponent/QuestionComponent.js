@@ -302,10 +302,10 @@ export default class QuestionComponent extends Component {
             disabled = true;
         }
         this.state.questions ? display = <div className={styles.wrapper}>
-            <h2 className={styles.title}>{this.state.sections[this.state.section].title}</h2>
-            <h4 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h4>
+            <h1 className={styles.title}>{this.state.sections[this.state.section].title}</h1>
+            <h3 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h3>
             <div className={styles.line}></div>
-            <div className={styles.question} style={{fontSize: "1.5em"}}>{this.state.questions[this.state.question].question}</div>
+            <div className={styles.question} style={{fontSize: "1.4em"}}>{this.state.questions[this.state.question].question}</div>
             <Rating 
                 question={this.state.question} 
                 rating={this.state.questions[this.state.question].type} 
@@ -337,10 +337,10 @@ export default class QuestionComponent extends Component {
             />
         </div> : display = '';   
         this.state.start ? consent = <div className={styles.wrapper}>
-            <h2 className={styles.title}>{this.state.sections[this.state.section].title}</h2>
-            <h4 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h4>
+            <h1 className={styles.title}>{this.state.sections[this.state.section].title}</h1>
+            <h3 className={styles.subtitle}>{this.state.sections[this.state.section].text}</h3>
             <div className={styles.line}></div>
-            <div className={styles.question} style={{fontSize: "1.5em", whiteSpace: "pre-line"}}>{this.state.questions[this.state.question].question}</div>
+            <div className={styles.question} style={{fontSize: "1.4em", whiteSpace: "pre-line"}}>{this.state.questions[this.state.question].question}</div>
             <ConsentButton handleNext={this.handleNext} consent={this.state.consent}/>
         </div>  : consent = false;    
         consent ? display = consent : display = display
